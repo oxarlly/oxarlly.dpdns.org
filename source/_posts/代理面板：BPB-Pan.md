@@ -8,7 +8,7 @@ tags:
 
 
 # 链接
-点击此处浏览    {% btn 'https://bpb-worker-panel-al8.pages.dev/panel',BPB Panel 2.4.3 💦 %}
+点击此处直达    {% btn 'https://bpb-worker-panel-al8.pages.dev/panel',BPB Panel 2.4.3 💦 %}
 <div align="center"><img src="https://oxarlly.github.io/images/代理面板：BPB-Pan/1.png" style="zoom:100%" alt=""></div>
 
 # 前端（v2rayN）
