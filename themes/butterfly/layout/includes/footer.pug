@@ -36,11 +36,22 @@ script.
     fetch(apiUrl)
       .then(response => response.json())
       .then(data => {
-        const sunrise = new Date(data.results.sunrise).getTime();
-        const sunset = new Date(data.results.sunset).getTime();
-        const currentTime = new Date().getTime();
+        // 获取 UTC 时间的日出和日落，并转换为 Date 对象
+        const sunriseUTC = new Date(data.results.sunrise);
+        const sunsetUTC = new Date(data.results.sunset);
 
-        if (currentTime >= sunset || currentTime <= sunrise) {
+        // 将 UTC 时间转换为本地时间
+        const sunriseLocal = new Date(sunriseUTC.getTime() - (sunriseUTC.getTimezoneOffset() * 60000));
+        const sunsetLocal = new Date(sunsetUTC.getTime() - (sunsetUTC.getTimezoneOffset() * 60000));
+
+        // 获取当前时间的本地时间
+        const currentTime = new Date();
+
+        console.log("Sunrise at:", sunriseLocal);
+        console.log("Sunset at:", sunsetLocal);
+
+        // 比较本地时间
+        if (currentTime >= sunsetLocal || currentTime <= sunriseLocal) {
           enableDarkMode();
         } else {
           disableDarkMode();
