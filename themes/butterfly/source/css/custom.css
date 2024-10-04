@@ -1,0 +1,22 @@
+/* 全局的分割线样式 */
+hr {
+  border: none;
+  border-top: 2px solid #ccc;
+  margin: 20px 0;
+  width: 80%;
+  opacity: 0.8;
+}
+
+/* 带图标的分割线 */
+hr:before {
+  content: '\f197'; /* 使用 Font Awesome 图标 */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 0 10px;
+  color: #666;
+}
