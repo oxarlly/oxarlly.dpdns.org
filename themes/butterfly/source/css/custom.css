@@ -1,22 +1,20 @@
-/* 全局的分割线样式 */
-hr {
-  border: none;
-  border-top: 2px solid #ccc;
+/* 自定义带剪刀图标和虚线的分割线样式 */
+.custom-hr {
+  border: 0;
+  border-top: 1px dashed #8fc5db; /* 设置虚线边框颜色 */
+  text-align: left;
+  height: 0;
+  position: relative;
   margin: 20px 0;
-  width: 80%;
-  opacity: 0.8;
 }
 
-/* 带图标的分割线 */
-hr:before {
-  content: '\f197'; /* 使用 Font Awesome 图标 */
+.custom-hr:before {
+  content: '\f0c4'; /* 使用 Font Awesome 剪刀图标的 Unicode */
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   position: absolute;
-  top: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #fff;
-  padding: 0 10px;
-  color: #666;
+  left: -15px; /* 根据需要调整剪刀图标位置 */
+  top: -10px;  /* 根据需要调整剪刀图标上下位置 */
+  color: #8fc5db; /* 图标颜色 */
+  font-size: 16px;
 }
