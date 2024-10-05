@@ -1,20 +1,20 @@
-/* 自定义带剪刀图标和虚线的分割线样式 */
-.custom-hr {
+/* 修改所有文章中的 <hr> 样式，添加剪刀图标 */
+hr {
   border: 0;
-  border-top: 1px dashed #8fc5db; /* 设置虚线边框颜色 */
+  border-top: 1px dashed #8fc5db; /* 虚线分割线 */
   text-align: left;
   height: 0;
   position: relative;
   margin: 20px 0;
 }
 
-.custom-hr:before {
-  content: '\f0c4'; /* 使用 Font Awesome 剪刀图标的 Unicode */
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
+hr:before {
+  content: '\f0c4'; /* 剪刀图标的 Unicode */
+  font-family: "Font Awesome 5 Free"; /* 引用 Font Awesome 字体 */
+  font-weight: 900; /* 使用 solid 图标 */
   position: absolute;
-  left: -15px; /* 根据需要调整剪刀图标位置 */
-  top: -10px;  /* 根据需要调整剪刀图标上下位置 */
-  color: #8fc5db; /* 图标颜色 */
-  font-size: 16px;
+  left: -15px; /* 调整剪刀图标的位置 */
+  top: -10px;
+  color: #8fc5db; /* 剪刀图标的颜色 */
+  font-size: 16px; /* 调整图标大小 */
 }
