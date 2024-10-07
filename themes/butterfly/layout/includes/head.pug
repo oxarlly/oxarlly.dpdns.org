@@ -69,3 +69,11 @@ include ./head/config_site.pug
 
 // 谷歌的html标记
 meta(name="google-site-verification" content="Zepir5L0MQpLxVLNQ1k-0CNsHtrOvX0hhc490slOf-U")
+
+script.
+  document.addEventListener('DOMContentLoaded', function() {
+    const hrElements = document.querySelectorAll('hr');
+    hrElements.forEach(function(hr) {
+      hr.classList.add('custom-hr');
+    });
+  });
