@@ -21,7 +21,6 @@ menu:
   时间线: /timeline/ || fas fa-timeline
   传送门: /link/ || fas fa-link
   关于: /about/ || fas fa-heart
-  编辑: https://github.com/oxarlly/oxarlly.github.io/tree/master/source || fas fa-pencil-alt
 
 # Code Blocks (代碼相關)
 # --------------------------------------
@@ -215,7 +214,7 @@ footer:
   owner:
     enable: true
     since: 2022
-  custom_text: 正常运行🟢 | 千顷文化
+  custom_text: 千顷文化 | 上传  胡离 — <a href="https://github.com/oxarlly/oxarlly.github.io/tree/master/source">编辑</a>
   copyright: false # Copyright of theme and framework
 
 # aside (側邊欄)
