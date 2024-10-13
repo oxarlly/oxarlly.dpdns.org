@@ -215,7 +215,7 @@ footer:
   owner:
     enable: true
     since: 2022
-  custom_text: 正在获取位置信息···| 千顷文化
+  custom_text: 正常运行🟢 | 千顷文化
   copyright: false # Copyright of theme and framework
 
 # aside (側邊欄)
@@ -921,7 +921,6 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
-    - <script src="/js/custom-footer.js"></script>
   bottom:
     # - <script src="xxxx"></script>
 
