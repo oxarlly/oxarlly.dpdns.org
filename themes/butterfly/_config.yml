@@ -215,7 +215,7 @@ footer:
   owner:
     enable: true
     since: 2022
-  custom_text: 千顷文化 | 村田品则 制
+  custom_text: 正在获取位置信息···| 千顷文化
   copyright: false # Copyright of theme and framework
 
 # aside (側邊欄)
