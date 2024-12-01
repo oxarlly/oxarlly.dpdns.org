@@ -1,9 +1,8 @@
-title: 我的世界
+title: 蔚蓝档案
 aside: false
 comments: false
-top_img: https://oxarlly.github.io/Gallery/02/6.jpg
-
-date: 2021-09-11 20:25:14
+top_img: https://oxarlly.github.io/Gallery/02/1.jpg
+date: 2024-12-01 08:11:14
 ---
 
 {% gallery %}
