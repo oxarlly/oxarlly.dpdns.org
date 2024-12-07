@@ -147,3 +147,11 @@ hexo-tag-dplayer:
     loop: yes
     screenshot: yes
 
+cookieConsent:
+  enable: true
+  message: "此网站请求您同意您的数据用于以下用途"
+  deny: "不同意"
+  accept: "同意"
+  more: "了解详情"
+  link: "/privacy-policy"
+
