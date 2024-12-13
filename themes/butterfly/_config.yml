@@ -57,7 +57,8 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page
-index_img: https://s21.ax1x.com/2024/12/08/pA76rRK.jpg
+index_img: media/bg.jpg
+# https://s21.ax1x.com/2024/12/08/pA76rRK.jpg
 
 # If the banner of page not setting, it will show the top_img
 default_top_img:
