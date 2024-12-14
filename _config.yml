@@ -147,11 +147,26 @@ hexo-tag-dplayer:
     loop: yes
     screenshot: yes
 
-cookieConsent:
+cookieconsent:
   enable: true
-  message: "此网站请求您同意您的数据用于以下用途"
-  deny: "不同意"
-  accept: "同意"
-  more: "了解详情"
-  link: "/privacy-policy"
+  options: {
+             "palette": {
+               "popup": {
+                 "background": "#eb6c44",
+                 "text": "#ffffff"
+               },
+               "button": {
+                 "background": "#f5d948"
+               }
+             },
+             "theme": "classic",
+             "position": "top",
+             "static": true,
+             "content": {
+               "message": "This website uses cookies to ensure you get the best experience on our website. Who doesn't like cookies?",
+               "dismiss": "Feed me",
+               "link": "Cookie recipes",
+               "href": "buzzcat.com"
+             }
+           }
 
