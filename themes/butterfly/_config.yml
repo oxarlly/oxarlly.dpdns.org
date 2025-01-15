@@ -970,10 +970,10 @@ CDN:
     # docsearch_css:
     # docsearch_js:
     # egjs_infinitegrid:
-    # fancybox:
+    fancybox: https://npm.elemecdn.com/@fancyapps/ui/dist/fancybox.css
     # fancybox_css:
     # fireworks:
-    # fontawesome:
+    fontawesome: https://use.fontawesome.com/releases/v6.0.0/css/all.css
     # fontawesome:
     # gitalk:
     # gitalk_css:
