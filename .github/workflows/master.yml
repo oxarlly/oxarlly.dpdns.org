@@ -23,6 +23,8 @@ jobs:
     # 安装 Hexo 及其依赖
     - name: Setup Hexo Dependencies
       run: |
+        git remote add upstream https://github.com/oxarlly/oxarlly.github.io.git
+        git pull upstream master
         npm install hexo-cli -g
         npm install        
     
@@ -50,6 +52,9 @@ jobs:
     # 部署 Hexo 网站
     - name: Deploy Hexo 
       run: |
+        git add .
+        git commit -m "Commit"
+        git push -u upstream master
         hexo clean
         hexo generate 
         hexo deploy
