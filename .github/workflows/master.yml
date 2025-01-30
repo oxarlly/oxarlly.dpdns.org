@@ -3,57 +3,62 @@ name: Hexo Blog CI
 on: 
   push:
     branches:
-      - master
+      - master  # A 仓库的 master 分支触发此工作流
 
 jobs:
   build: 
     runs-on: ubuntu-latest 
         
     steps:
-    # 使用稳定的 actions/checkout 版本
-    - name: Checkout Repository master branch
+    # Checkout A 仓库的 master 分支
+    - name: Checkout Repository (A repo - oxarlly/myhexo1)
       uses: actions/checkout@v3
-      
-    # 使用稳定的 actions/setup-node 版本
-    - name: Setup Node.js 12.x 
+
+    # 设置 Node.js 环境
+    - name: Setup Node.js 16.x 
       uses: actions/setup-node@v3
       with:
         node-version: "16"
     
-    # 安装 Hexo 及其依赖
-    - name: Setup Hexo Dependencies
+    # 安装 Hexo 依赖
+    - name: Install Dependencies
       run: |
-        git remote add upstream https://github.com/oxarlly/oxarlly.github.io.git
         npm install hexo-cli -g
         npm install        
-    
-    # 配置 SSH 部署私钥
+
+    # 配置 SSH 私钥，确保可以推送到 B 仓库（oxarlly/oxarlly.github.io）
     - name: Setup Deploy Private Key
       env:
         HEXO_DEPLOY_PRIVATE_KEY: ${{ secrets.HEXO_DEPLOY_PRIVATE_KEY }}
       run: |
         mkdir -p ~/.ssh/
-        echo "$HEXO_DEPLOY_PRIVATE_KEY" > ~/.ssh/id_rsa 
+        echo "$HEXO_DEPLOY_PRIVATE_KEY" > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
         ssh-keyscan github.com >> ~/.ssh/known_hosts
     
-    # 强制将 git remote URL 切换为 SSH 格式
-    - name: Force use SSH for git remote
+    # 设置 Git 配置，用于推送到 B 仓库
+    - name: Setup Git Configuration
+      run: |
+        git config --global user.name 'oxarlly'
+        git config --global user.email 'jianhua37212022@163.com'
+
+    # 强制使用 SSH URL 作为 git remote
+    - name: Use SSH URL for git remote
       run: |
         git remote set-url origin git@github.com:oxarlly/oxarlly.github.io.git
-                
-    # 设置 Git 信息
-    - name: Setup Git Information
-      run: | 
-        git config --global user.name 'oxarlly' 
-        git config --global user.email 'jianhua37212022@163.com'
+        git remote add upstream git@github.com:oxarlly/myhexo1.git  # 添加 A 仓库作为 upstream
     
-    # 部署 Hexo 网站
-    - name: Deploy Hexo 
+    # 获取 A 仓库的最新代码，并将静态文件推送到 B 仓库
+    - name: Sync Content and Deploy Hexo to B repo
       run: |
+        # 获取 A 仓库的最新代码
+        git fetch upstream
+        git checkout -B master upstream/master  # 切换到 A 仓库的 master 分支
         git add .
-        git commit -m "Commit"
-        git push -u upstream master
+        git commit -m "Sync Hexo content from A repo to B repo"
+        git push origin master  # 将修改推送到 B 仓库的 master 分支
+
+        # 生成并部署 Hexo
         hexo clean
-        hexo generate 
-        hexo deploy
+        hexo generate
+        hexo deploy  # 部署到 B 仓库
