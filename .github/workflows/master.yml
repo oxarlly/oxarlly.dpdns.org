@@ -24,7 +24,6 @@ jobs:
     - name: Setup Hexo Dependencies
       run: |
         git remote add upstream https://github.com/oxarlly/oxarlly.github.io.git
-        git pull upstream master
         npm install hexo-cli -g
         npm install        
     
