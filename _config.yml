@@ -146,27 +146,3 @@ hexo-tag-dplayer:
     api: https://api.prprpr.me/dplayer/
     loop: yes
     screenshot: yes
-
-cookieconsent:
-  enable: true
-  options: {
-             "palette": {
-               "popup": {
-                 "background": "#eb6c44",
-                 "text": "#ffffff"
-               },
-               "button": {
-                 "background": "#f5d948"
-               }
-             },
-             "theme": "classic",
-             "position": "top",
-             "static": true,
-             "content": {
-               "message": "This website uses cookies to ensure you get the best experience on our website. Who doesn't like cookies?",
-               "dismiss": "Feed me",
-               "link": "Cookie recipes",
-               "href": "buzzcat.com"
-             }
-           }
-
