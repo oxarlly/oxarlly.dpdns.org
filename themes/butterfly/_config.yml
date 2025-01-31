@@ -186,7 +186,7 @@ post_edit:
   enable: true
   # url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/
   # For example: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
-  url: https://qexo-five-pied.vercel.app/edit.html?file=source%2F_posts%2F{filename}.md&postname={filename}
+  url: https://qexo-five-pied.vercel.app/edit.html?file=source%2F_posts%2F{{ filename }}.md&postname={{ filename }}
   # https://github.com/oxarlly/oxarlly.github.io/edit/master/source/
 
 # Related Articles
