@@ -89,7 +89,6 @@ hexo.extend.helper.register('isImgOrUrl', function (path) {
 
 hexo.extend.helper.register('edit_link', function(page) {
   const filename = page.source.split('/').pop().replace(/\.md$/, '');
-  const file = `source/_posts/${filename}.md`;
-  const postname = filename;
-  return `https://qexo-five-pied.vercel.app/edit.html?file=${encodeURIComponent(postname)}.md&postname=${encodeURIComponent(postname)}`;
+  return `https://qexo-five-pied.vercel.app/edit.html?file=${filename}.md&postname=${filename}`;
 });
+
