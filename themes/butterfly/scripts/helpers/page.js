@@ -88,8 +88,7 @@ hexo.extend.helper.register('isImgOrUrl', function (path) {
 })
 
 hexo.extend.helper.register('edit_link', function(page) {
-  const filename = page.full_source ? page.full_source.match(/([^/]+)\.md$/)[1] : '';
-  return `https://qexo-five-pied.vercel.app/edit.html?file=${filename}.md&postname=${filename}`;
+  const format = ':title';
+  const title = format.replace(':title', page.title);
+  return `https://qexo-five-pied.vercel.app/edit.html?file=${title}.md&postname=${title}`;
 });
-
-
