@@ -95,8 +95,8 @@ hexo.extend.filter.register('before_generate', () => {
       QR_code: null
     },
     post_edit: {
-      enable: false,
-      url: null
+      enable: true,
+      url: '/edit.html?file=source/_posts/{{ page.source }}&postname={{ page.title }}'
     },
     related_post: {
       enable: true,
