@@ -95,8 +95,8 @@ hexo.extend.filter.register('before_generate', () => {
       QR_code: null
     },
     post_edit: {
-      enable: true,
-      url: 'https://qexo-five-pied.vercel.app/edit.html?file=source/_posts/{{ page.source }}&postname={{ page.title }}'
+      enable: false,
+      url: 'null'
     },
     related_post: {
       enable: true,
