@@ -87,9 +87,3 @@ hexo.extend.helper.register('isImgOrUrl', function (path) {
   return path.indexOf('//') !== -1 || imgTestReg.test(path)
 })
 
-hexo.extend.helper.register('edit_link', function(page) {
-  const format = ':title';
-  const title = page && page.title ? format.replace(':title', page.title) : 'default-title';
-  return `https://qexo-five-pied.vercel.app/edit.html?file=${title}.md&postname=${title}`;
-});
-
