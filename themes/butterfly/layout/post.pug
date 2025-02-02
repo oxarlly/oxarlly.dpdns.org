@@ -30,8 +30,7 @@ block content
       - var commentsJsLoad = true
       !=partial('includes/third-party/comments/index', {}, {cache: true})
       
-    if theme.post_edit.enable && page.layout === 'post'
-      .post-edit
-        a(href="{{ edit_link(page) }}" target="_blank" rel="noopener")
-          i.fas.fa-edit
-          | 编辑
+    if theme.post_edit
+   .post-edit
+     a(href="{{ edit_link(page) }}" target="_blank" rel="noopener" title=theme.post_edit.text)
+       i.fas.fa-edit
