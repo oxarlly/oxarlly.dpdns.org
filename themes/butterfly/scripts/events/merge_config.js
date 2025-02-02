@@ -96,7 +96,7 @@ hexo.extend.filter.register('before_generate', () => {
     },
     post_edit: {
       enable: true,
-      url: '/edit.html?file=source/_posts/{{ page.source }}&postname={{ page.title }}'
+      url: 'https://qexo-five-pied.vercel.app/edit.html?file=source/_posts/{{ page.source }}&postname={{ page.title }}'
     },
     related_post: {
       enable: true,
