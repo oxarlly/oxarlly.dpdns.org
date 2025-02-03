@@ -772,10 +772,10 @@ subtitle:
   source: 3
   # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
   sub:
-    - 人无千日好，花无百日红。
-    - All good things must come to an end.
-    - 人恶人怕天不怕，人善人欺天不欺
-    - Evil is feared by man, not by Heaven; good may be oppressed by men, but not by the will of Heaven.
+    - 早有秋声随落叶，独将凉意伴流萤
+    - 出自 吴融《西陵夜居》
+    - 所在皆是奇迹的起点
+    - 出自 蔚蓝档案
 # Loading Animation (加載動畫)
 preloader:
   enable: false
