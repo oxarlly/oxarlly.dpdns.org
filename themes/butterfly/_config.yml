@@ -948,7 +948,8 @@ CDN:
 
   # Custom format
   # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
-  custom_format: https://cdn.jsdelivr.net/gh/jquery/jquery@3.6.4/dist/jquery.min.js
+  custom_format:
+  # https://cdn.jsdelivr.net/gh/jquery/jquery@3.6.4/dist/jquery.min.js
 
   option:
     # abcjs_basic_js:
@@ -957,7 +958,6 @@ CDN:
     # algolia_js:
     # algolia_search:
     algolia_search: https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js
-    algolia_search_css: https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css
     # aplayer_css:
     aplayer_css: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css
     # aplayer_js:
@@ -966,7 +966,6 @@ CDN:
     # artalk_js:
     # blueimp_md5:
     # busuanzi:
-    busuanzi: https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
     # canvas_fluttering_ribbon:
     canvas_fluttering_ribbon: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js
     # canvas_nest:
@@ -984,7 +983,6 @@ CDN:
     # docsearch_css:
     # docsearch_js:
     # egjs_infinitegrid:
-    fancybox: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js
     # fancybox_css:
     fancybox_css: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css
     # fireworks:
@@ -1003,7 +1001,6 @@ CDN:
     katex: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css
     # katex_copytex:
     katex_copytex: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.js
-    katex_copytex_css: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.css
     # lazyload:
     lazyload: https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js
     # local_search:
@@ -1043,6 +1040,5 @@ CDN:
     # utils:
     # valine:
     valine: https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js
-    waline: https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js
     # waline_css:
     # waline_js:
