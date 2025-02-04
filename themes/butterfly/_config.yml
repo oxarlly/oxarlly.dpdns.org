@@ -955,7 +955,6 @@ CDN:
     # activate_power_mode:
     activate_power_mode: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js
     # algolia_js:
-    algolia_js: /js/search/algolia.js
     # algolia_search:
     algolia_search: https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js
     algolia_search_css: https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css
@@ -967,7 +966,7 @@ CDN:
     # artalk_js:
     # blueimp_md5:
     # busuanzi:
-    busuanzi: //busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
+    busuanzi: https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
     # canvas_fluttering_ribbon:
     canvas_fluttering_ribbon: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js
     # canvas_nest:
@@ -1008,10 +1007,7 @@ CDN:
     # lazyload:
     lazyload: https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js
     # local_search:
-    local_search: /js/search/local-search.js
     # main:
-    main: /js/main.js
-    main_css: /css/index.css
     # main_css:
     # mathjax:
     mathjax: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
@@ -1040,13 +1036,11 @@ CDN:
     # snackbar_css:
     snackbar_css: https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css
     # translate:
-    translate: /js/tw_cn.js
     # twikoo:
     https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js
     # typed:
     typed: https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js
     # utils:
-    utils: /js/utils.js
     # valine:
     valine: https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js
     waline: https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js
