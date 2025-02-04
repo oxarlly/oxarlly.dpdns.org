@@ -1034,7 +1034,7 @@ CDN:
     snackbar_css: https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css
     # translate:
     # twikoo:
-    https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js
+    twikoo: https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js
     # typed:
     typed: https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js
     # utils:
