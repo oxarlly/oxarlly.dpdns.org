@@ -217,7 +217,7 @@ footer:
   owner:
     enable: true
     since: 2022
-  custom_text: 千顷文化 | 上传  無離 — Fortaleza — <a href="https://github.com/oxarlly/oxarlly.github.io/tree/master/source">编辑</a>
+  custom_text: 千顷文化 | 上传  無離 — Fortaleza — <a href="https://qexo-five-pied.vercel.app/">编辑</a>
   copyright: false # Copyright of theme and framework
 
 # aside (側邊欄)
