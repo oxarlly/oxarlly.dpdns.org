@@ -13,3 +13,11 @@ if hexo-config('css_prefix')
 
 // search
 @import '_search/index'
+
+// Add media query for mobile
+@media screen and (max-width: 768px) {
+  /* 隐藏侧边栏按钮 */
+  #sidebar-menus {
+    display: none;
+  }
+}
