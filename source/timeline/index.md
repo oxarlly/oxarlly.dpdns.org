@@ -5,32 +5,41 @@ comments: false
 top_img: timeline/1.png
 ---
 
-{% timeline 2023 %}
-<!-- timeline 02-21 -->
-开始建立网站，寻找方法
-<!-- endtimeline -->
-<!-- timeline 02-21 -->
-建造happath.ccccocccc.cc静态网站。
-<!-- endtimeline -->
-<!-- timeline 05-13 -->
-在happath.ccccocccc.cc（已重定向到某网站）上传第一份静态文件；
-之后陆陆续续的发布各种新颖的文章。
-<!-- endtimeline -->
-<!-- timeline 08-19 -->
-为了更好地提高网站的交互作用，放弃对happath.ccccocccc.cc的更改，建造happath.github.io，使用hexo的butterfly主题，增强交互。
-<!-- endtimeline -->
-<!-- timeline 08-29 -->
-更改域名为senchin.github.io
-<!-- endtimeline -->
-<!-- timeline 09-21 -->
-提供员工平台（senchin0.github.io），大规模发展
-<!-- endtimeline -->
-{% endtimeline %}
-{% timeline 2024 %}
-<!-- timeline 01-13 -->
-更改域名为oxarlly.github.io
-<!-- endtimeline -->
-<!-- timeline 01-14  -->
-与Google公司联合外交，并且增加对网站的信任
-<!-- endtimeline -->
+{% timeline %}
+
+<!-- 早期 -->
+{% timenode 早期 %}
+千顷文化 (Oxarlly) 团队或个人开始在数字内容领域进行探索。 初期可能以个人兴趣项目为主，例如网页设计、数字艺术创作、小游戏开发等。 团队成员可能具备一定的设计、编程或写作基础。
+{% endtimenode %}
+
+<!-- 发展期 -->
+{% timenode 发展期 %}
+本企业开始尝试将多个项目整合，形成更完整的内容产品。 例如，将网页设计与内容创作结合，为客户提供定制化的网站建设服务。
+{% endtimenode %}
+
+<!-- 网站上线 -->
+{% timenode 网站上线 %}
+本企业官方网站 `oxarlly.github.io` 上线。 网站主要用于展示团队的项目、技能和联系方式，以及宣传企业文化和价值观。 网站的上线标志着本企业开始更加正式地对外宣传自己的实力。
+{% endtimenode %}
+
+<!-- 项目积累 -->
+{% timenode 项目积累 %}
+本企业开始参与一些实际的项目，可能是为客户提供网页设计、数字内容创作、品牌推广等服务。 通过这些项目，本企业积累了更多的行业经验，并对自己的服务流程进行了优化。
+{% endtimenode %}
+
+<!-- 技术提升 -->
+{% timenode 技术提升 %}
+本企业在数字内容创作领域持续深耕，不断提升自己的技术水平，并关注行业发展趋势。 团队成员开始学习和掌握新的技术，例如响应式网页设计、移动应用开发、视频制作等。
+{% endtimenode %}
+
+<!-- 内容创新 -->
+{% timenode 内容创新 %}
+本企业开始尝试将文化元素融入到数字内容创作中，例如，创作具有中国传统文化特色的网页设计、数字艺术作品或游戏。
+{% endtimenode %}
+
+<!-- 未来展望 -->
+{% timenode 未来展望 %}
+本企业将继续致力于数字内容创作领域，不断提升自己的创意水平和技术实力，并探索新的商业模式。 可能会推出自己的原创内容产品，或者与文化机构合作，共同推广优秀文化作品。
+{% endtimenode %}
+
 {% endtimeline %}
