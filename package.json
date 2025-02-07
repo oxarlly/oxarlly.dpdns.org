@@ -15,7 +15,7 @@
     "hexo": "^6.3.0",
     "hexo-cdn-jsdelivr": "^0.0.9",
     "hexo-tag-dplayer": "^0.3.3",
-    "hexo-generator-sitemap": "^2.1.0",
+    "hexo-generator-sitemap": "^3.0.1",
     "hexo-deployer-git": "^4.0.0",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-category": "^2.0.0",
