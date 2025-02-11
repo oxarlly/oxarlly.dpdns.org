@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://oxarlly.github.io/sitemap.xml
