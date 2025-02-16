@@ -10,14 +10,14 @@ comments: false
 
 {% aplayerlist %}
 {
-    "narrow": false,                          // Optional, narrow style
-    "autoplay": false,                         // Optional, autoplay song(s), not supported by mobile browsers
-    "mode": "random",                         // Optional, play mode, can be `random` `single` `circulation`(loop) `order`(no loop), default: `circulation`
-    "showlrc": 3,                             // Optional, show lrc, can be 1, 2, 3
-    "mutex": true,                            // Optional, pause other players when this player playing
-    "theme": "#e6d0b2",	                      // Optional, theme color, default: #b7daff
-    "preload": "metadata",                    // Optional, the way to load music, can be 'none' 'metadata' 'auto', default: 'auto'
-    "listmaxheight": "513px",                 // Optional, max height of play list
+    "narrow": false,
+    "autoplay": false,
+    "mode": "random",
+    "showlrc": 3,
+    "mutex": true,
+    "theme": "#e6d0b2",
+    "preload": "metadata",
+    "listmaxheight": "513px",
     "music": [
         {
             "title": "Nevada(Original Mix)",
