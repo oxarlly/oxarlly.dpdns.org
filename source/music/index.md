@@ -25,6 +25,13 @@ comments: false
             "url": "https://oxarlly.github.io/music/playlist/Nevada(Original Mix)/1.mp3",
             "pic": "https://oxarlly.github.io/music/playlist/Nevada(Original Mix)/1.jpg",
             "lrc": "https://oxarlly.github.io/music/playlist/Nevada(Original Mix)/1.txt"
+        },
+        {
+            "title": "清空",
+            "author": "王忻辰&苏星婕",
+            "url": "https://oxarlly.github.io/music/playlist/清空/1.flac",
+            "pic": "/playlist/清空/1.jpg",
+            "lrc": "https://oxarlly.github.io/music/playlist/清空/1.lrc"
         }
     ]
 }
