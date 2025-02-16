@@ -22,9 +22,9 @@ comments: false
         {
             "title": "Nevada(Original Mix)",
             "author": "Vicetone&Cozi Zuehlsdorff",
-            "url": "/music/playlist/Nevada(Original Mix)/1.mp3",
-            "pic": "/music/playlist/Nevada(Original Mix)/1.jpg",
-            "lrc": "/music/playlist/Nevada(Original Mix)/1.txt"
+            "url": "https://oxarlly.github.io/music/playlist/Nevada(Original Mix)/1.mp3",
+            "pic": "https://oxarlly.github.io/music/playlist/Nevada(Original Mix)/1.jpg",
+            "lrc": "https://oxarlly.github.io/music/playlist/Nevada(Original Mix)/1.txt"
         }
     ]
 }
