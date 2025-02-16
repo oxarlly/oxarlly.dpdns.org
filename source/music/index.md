@@ -22,15 +22,9 @@ comments: false
         {
             "title": "Nevada(Original Mix)",
             "author": "Vicetone&Cozi Zuehlsdorff",
-            "url": "playlist/Nevada(Original Mix)/1.flac",
-            "pic": "playlist/Nevada(Original Mix)/1.jpg",
-            "lrc": "playlist/Nevada(Original Mix)/1.lrc"
-        },
-        {
-            "title": "アイロニ",
-            "author": "鹿乃",
-            "url": "irony.mp3",
-            "pic": "irony.jpg"
+            "url": "music/playlist/Nevada(Original Mix)/1.flac",
+            "pic": "music/playlist/Nevada(Original Mix)/1.jpg",
+            "lrc": "music/playlist/Nevada(Original Mix)/1.lrc"
         }
     ]
 }
