@@ -30,7 +30,7 @@ comments: false
             "title": "清空",
             "author": "王忻辰&苏星婕",
             "url": "https://oxarlly.github.io/music/playlist/清空/1.flac",
-            "pic": "playlist/清空/1.jpg",
+            "pic": "https://oxarlly.github.io/music/playlist/清空/1.jpg",
             "lrc": "https://oxarlly.github.io/music/playlist/清空/1.lrc"
         }
     ]
