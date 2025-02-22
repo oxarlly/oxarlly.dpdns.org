@@ -1,4 +1,4 @@
-if $prismjs_line_number
+if hexo-fonfig('prismjs_settings.line_number')
   @require 'line-number'
 
 if $highlight_theme != false
@@ -6,8 +6,6 @@ if $highlight_theme != false
 
 #article-container
   pre[class*='language-']
-    scrollbar-color: var(--hlscrollbar-bg) transparent
-
     &::-webkit-scrollbar-thumb
       background: var(--hlscrollbar-bg)
 
@@ -16,7 +14,7 @@ if $highlight_theme != false
 
     .caption
       margin-left: -3.8em
-      padding: 4px 16px !important
+      padding: .2rem .8rem !important
 
       a
         padding: 0 !important

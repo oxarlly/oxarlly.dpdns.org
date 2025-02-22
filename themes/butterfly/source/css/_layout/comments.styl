@@ -1,11 +1,6 @@
 #post-comment
   .comment-head
-    margin-bottom: 20px
-
-    &:after
-      display: block
-      clear: both
-      content: ''
+    margin-bottom: 1rem
 
     .comment-headline
       display: inline-block
@@ -13,13 +8,13 @@
       font-weight: 700
       font-size: 1.43em
 
-    .comment-switch
+    #comment-switch
       display: inline-block
 
       if hexo-config('comments.text')
         float: right
-        margin: 2px auto 0
-        padding: 4px 16px
+        margin: .1rem auto 0
+        padding: .2rem .8rem
         width: max-content
         border-radius: 8px
         background: $comments-switch-bg
@@ -35,10 +30,10 @@
       .second-comment
         color: $comments-switch-second-text
 
-      #switch-btn
+      .switch-btn
         position: relative
         display: inline-block
-        margin: -4px 8px 0
+        margin: -4px .4rem 0
         width: 42px
         height: 22px
         border-radius: 34px
@@ -58,24 +53,12 @@
           content: ''
           transition: .4s
 
+        &.move
+          background-color: $comments-switch-second-text
+
+          &:before
+            transform: translateX(20px)
+
   .comment-wrap
-    > div
-      animation: tabshow .5s
-
-      &:nth-child(2)
-        display: none
-
-  &.move
-    #switch-btn
-      background-color: $comments-switch-second-text
-
-      &:before
-        transform: translateX(20px)
-
-    .comment-wrap
-      > div
-        &:first-child
-          display: none
-
-        &:last-child
-          display: block
+    > div:nth-child(2)
+      display: none

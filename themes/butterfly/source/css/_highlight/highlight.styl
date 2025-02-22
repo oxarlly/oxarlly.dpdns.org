@@ -1,5 +1,7 @@
 $highlight_theme = hexo-config('highlight_theme')
-wordWrap = $highlight_enable && !$highlight_line_number && hexo-config('code_word_wrap')
+$highlighEnable = hexo-config('highlight_settings') && hexo-config('highlight_settings.enable')
+$prismjsEnable = hexo-config('prismjs_settings') && hexo-config('prismjs_settings.enable')
+wordWrap = !hexo-config('highlight_settings.line_number') && hexo-config('code_word_wrap')
 
 @require 'theme'
 
@@ -13,25 +15,15 @@ wordWrap = $highlight_enable && !$highlight_line_number && hexo-config('code_wor
   --hlscrollbar-bg: $highlight-scrollbar
   --hlexpand-bg: linear-gradient(180deg, rgba($highlight-background, .6), rgba($highlight-background, .9))
 
-[data-theme='dark']
-  --hl-color: alpha(#FFFFFF, .7)
-  --hl-bg: lighten(#121212, 2)
-  --hltools-bg: lighten(#121212, 3)
-  --hltools-color: #90a4ae
-  --hlnumber-bg: lighten(#121212, 2)
-  --hlnumber-color: alpha(#FFFFFF, .4)
-  --hlscrollbar-bg: lighten(#121212, 5)
-  --hlexpand-bg: linear-gradient(180deg, rgba(lighten(#121212, 2), .6), rgba(lighten(#121212, 2), .9))
-
-if $highlight_enable
+if $highlighEnable
   @require 'highlight/index'
 
-if $prismjs_enable
+if $prismjsEnable
   @require 'prismjs/index'
 
 $code-block
   overflow: auto
-  margin: 0 0 20px
+  margin: 0 0 1rem
   padding: 0
   background: var(--hl-bg)
   color: var(--hl-color)
@@ -41,6 +33,28 @@ $code-block
     counter-reset: line
     white-space: pre-wrap
 
+blockquote
+  margin: 0 0 1rem
+  padding: .1rem .8rem
+  border-left: .2rem solid $blockquote-padding-color
+  background-color: var(--blockquote-bg)
+  color: var(--blockquote-color)
+
+  a
+    word-break: break-all
+
+  p
+    margin: 0 !important
+    padding: .5rem 0
+
+  footer
+    padding: 0 0 .5rem
+
+    cite
+      &:before
+        padding: 0 .3em
+        content: '—'
+
 #article-container
   pre,
   code
@@ -48,7 +62,7 @@ $code-block
     font-family: $code-font-family !important
 
   code
-    padding: 2px 4px
+    padding: .1rem .2rem
     background: $code-background
     color: $code-foreground
 
@@ -73,7 +87,7 @@ $code-block
 
     figcaption,
     .caption
-      padding: 6px 0 2px 14px
+      padding: .3rem 0 .1rem .7rem
       font-size: $code-font-size
       line-height: 1em
 
@@ -85,61 +99,50 @@ $code-block
         &:hover
           border-bottom-color: var(--hl-color)
 
-    &.copy-true
-      user-select: all
-      -webkit-user-select: all
-
-      & > table,
-      & > pre
-        display: block !important
-        opacity: 0
-
   .highlight-tools
     position: relative
     display: flex
     align-items: center
     overflow: hidden
-    min-height: 24px
+    min-height: 1.2rem
     height: 2.15em
     background: var(--hltools-bg)
     color: var(--hltools-color)
     font-size: $code-font-size
 
-    &.closed
-      & ~ *
-        display: none
-
-      .expand
-        transition: all .3s
-        transform: rotate(-90deg) !important
+    &.closed ~ *
+      display: none
 
     .expand
       position: absolute
-      padding: .57em .7em
+      padding: .4rem .7rem
       cursor: pointer
       transition: transform .3s
 
       & + .code-lang
-        left: 1.7em
+        left: 1.7rem
+
+      &.closed
+        transition: all .3s
+        transform: rotate(-90deg) !important
 
     .code-lang
       position: absolute
-      left: 14px
+      left: .7rem
       text-transform: uppercase
       font-weight: bold
       font-size: 1.15em
       user-select: none
-      -webkit-user-select: none
 
     .copy-notice
       position: absolute
-      right: 2.4em
+      right: 1.7rem
       opacity: 0
       transition: opacity .4s
 
     .copy-button
       position: absolute
-      right: 14px
+      right: .7rem
       cursor: pointer
       transition: color .2s
 
@@ -148,7 +151,6 @@ $code-block
 
   .gutter
     user-select: none
-    -webkit-user-select: none
 
   .gist table
     width: auto
@@ -158,7 +160,7 @@ $code-block
 
   if $highlight_theme == 'mac' || ($highlight_theme == 'mac light')
     figure.highlight
-      margin: 0 0 24px
+      margin: 0 0 1.2rem
       border-radius: 7px
       box-shadow: 0 5px 10px 0 $highlight-mac-border
       -webkit-transform: translateZ(0)
@@ -166,7 +168,7 @@ $code-block
       .highlight-tools
         &:after
           position: absolute
-          left: 14px
+          left: .7rem
           width: 12px
           height: 12px
           border-radius: 50%
@@ -182,13 +184,13 @@ $code-block
             transform: rotate(90deg) !important
 
           & ~ .copy-notice
-            right: 3.45em
+            right: 2.8rem
 
           & ~ .copy-button
-            right: 2.1em
+            right: 1.8rem
 
         .code-lang
-          left: 75px
+          left: 3.8rem !important
 
   if hexo-config('highlight_height_limit')
     .code-expand-btn
@@ -202,17 +204,12 @@ $code-block
       cursor: pointer
 
       i
-        padding: 6px 0
+        padding: .3rem 0
         color: var(--hlnumber-color)
         animation: code-expand-key 1.2s infinite
 
       &.expand-done
-        & > i
-          transform: rotate(180deg)
-
-        & + table,
-        & + pre
-          margin-bottom: 1.8em
+        display: none !important
 
       &:not(.expand-done)
         & ~ table,

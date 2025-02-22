@@ -18,7 +18,7 @@ script.
           includeReply: false
         }).then(function (res) {
           document.querySelectorAll('#recent-posts .twikoo-count').forEach((item,index) => {
-            item.textContent = res[index].count
+            item.innerText = res[index].count
           })
         }).catch(function (err) {
           console.log(err)
@@ -28,7 +28,7 @@ script.
         if (typeof twikoo === 'object') {
           runTwikoo()
         } else {
-          btf.getScript('!{url_for(theme.asset.twikoo)}').then(runTwikoo)
+          getScript('!{theme.CDN.twikoo}').then(runTwikoo)
         }
     }
 

@@ -1,8 +1,8 @@
-- const serverURL = theme.waline.serverURL.replace(/\/$/, '')
+- let { avatar,avatarCDN } = theme.waline
 
 script.
   window.addEventListener('load', () => {
-    const changeContent = content => {
+    const changeContent = (content) => {
       if (content === '') return content
 
       content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[!{_p("aside.card_newest_comments.image")}]') // replace image link
@@ -14,6 +14,13 @@ script.
         content = content.substring(0,150) + '...'
       }
       return content
+    }
+
+    const getIcon = (ava,mail) => {
+      if (ava) return ava
+      let defaultIcon = '!{ avatar ? `?d=${avatar}` : ''}'
+      let iconUrl = "!{avatarCDN ? avatarCDN : 'https://gravatar.loli.net/avatar/'}" + mail + defaultIcon
+      return iconUrl
     }
 
     const generateHtml = array => {
@@ -29,7 +36,7 @@ script.
           }
 
           result += `<div class='content'>
-          <a class='comment' href='${array[i].url}' title='${array[i].content}'>${array[i].content}</a>
+          <a class='comment' href='${array[i].url}'>${array[i].content}</a>
           <div class='name'><span>${array[i].nick} / </span><time datetime="${array[i].date}">${btf.diffDate(array[i].date, true)}</time></div>
           </div></div>`
         }
@@ -38,36 +45,41 @@ script.
       }
 
       let $dom = document.querySelector('#card-newest-comments .aside-list')
-      $dom && ($dom.innerHTML= result)
+      $dom.innerHTML= result
       window.lazyLoadInstance && window.lazyLoadInstance.update()
       window.pjax && window.pjax.refresh($dom)
     }
 
-    const getComment = async () => {
-      try {
-        const res = await fetch('!{serverURL}/api/comment?type=recent&count=!{theme.newest_comments.limit}', { method: 'GET' })
-        const result = await res.json()
-        const walineArray = result.data.map(e => {
-          return {
-            'content': changeContent(e.comment),
-            'avatar': e.avatar,
-            'nick': e.nick,
-            'url': e.url + '#' + e.objectId,
-            'date': e.time || e.insertedAt
-          }
-        })
-        btf.saveToLocal.set('waline-newest-comments', JSON.stringify(walineArray), !{theme.newest_comments.storage}/(60*24))
-        generateHtml(walineArray)
-      } catch (err) {
-        console.error(err)
-        const $dom = document.querySelector('#card-newest-comments .aside-list')
-        $dom.textContent= "!{_p('aside.card_newest_comments.error')}"
+    const getComment = () => {
+      const loadWaline = () => {
+        Waline.Widget.RecentComments({
+          serverURL: '!{theme.waline.serverURL}',
+          count: !{theme.newest_comments.limit}
+        }).then(res => {
+          const walineArray = res.comments.map(e => {
+            return {
+              'content': changeContent(e.comment),
+              'avatar': getIcon(e.QQAvatar,e.mail),
+              'nick': e.nick,
+              'url': e.url + '#' + e.objectId,
+              'date': e.updatedAt,
+            }
+          })
+          saveToLocal.set('waline-newest-comments', JSON.stringify(walineArray), !{theme.newest_comments.storage}/(60*24))
+          generateHtml(walineArray)
+        }).catch(e => {
+          const $dom = document.querySelector('#card-newest-comments .aside-list')
+          $dom.innerHTML= "!{_p('aside.card_newest_comments.error')}"
+        }) 
       }
+
+      if (typeof Waline === 'function') loadWaline() 
+      else getScript('!{url_for(theme.CDN.waline)}').then(loadWaline)
     }
 
     const newestCommentInit = () => {
       if (document.querySelector('#card-newest-comments .aside-list')) {
-        const data = btf.saveToLocal.get('waline-newest-comments')
+        const data = saveToLocal.get('waline-newest-comments')
         if (data) {
           generateHtml(JSON.parse(data))
         } else {
@@ -77,5 +89,5 @@ script.
     }
 
     newestCommentInit()
-    btf.addGlobalFn('pjaxComplete', newestCommentInit, 'waline_newestComment')
+    document.addEventListener('pjax:complete', newestCommentInit)
   })

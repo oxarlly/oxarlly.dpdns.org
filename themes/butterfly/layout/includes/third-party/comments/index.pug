@@ -1,5 +1,5 @@
 - let defaultComment = theme.comments.use[0]
-hr.custom-hr
+hr
 #post-comment
   .comment-head
     .comment-headline
@@ -7,9 +7,9 @@ hr.custom-hr
       span= ' ' + _p('comment')
     
     if theme.comments.use.length > 1
-      .comment-switch
+      #comment-switch
         span.first-comment=defaultComment
-        span#switch-btn
+        span.switch-btn
         span.second-comment=theme.comments.use[1]
 
 
@@ -22,7 +22,7 @@ hr.custom-hr
           when 'Valine'
             #vcomment.vcomment
           when 'Disqusjs'
-            #disqusjs-wrap
+            #disqus_thread
           when 'Livere'
             #lv-container(data-id="city" data-uid=theme.livere.uid)
           when 'Gitalk'
@@ -33,14 +33,8 @@ hr.custom-hr
             #twikoo-wrap
           when 'Waline'
             #waline-wrap
-          when 'Giscus'
-            #giscus-wrap
           when 'Facebook Comments'
             .fb-comments(data-colorscheme = theme.display_mode === 'dark' ? 'dark' : 'light'
                         data-numposts= theme.facebook_comments.pageSize || 10
                         data-order-by= theme.facebook_comments.order_by || 'social'
                         data-width="100%")
-          when 'Remark42'
-            #remark42
-          when 'Artalk'
-            #artalk-wrap
