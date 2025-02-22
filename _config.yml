@@ -97,7 +97,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: butterfly
+theme: themes3
 
 # Deployment 部署
 ## Docs: https://hexo.io/docs/one-command-deployment
