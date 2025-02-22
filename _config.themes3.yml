@@ -430,7 +430,7 @@ copy:
   enable: false # 复制设置
   # Add the copyright information after copied content
   copyright:
-    enable: true
+    enable: false
     limit_count: 1000
 
 # Need to install the hexo-wordcount plugin
@@ -787,7 +787,7 @@ mask:
 
 # Loading Animation
 preloader:
-  enable: false
+  enable: true
   # source
   # 1. fullpage-loading
   # 2. pace (progress bar)
@@ -803,7 +803,7 @@ display_mode: light # Default display mode (网站显示模式，白天和黑夜
 
 # Configuration for beautifying the content of the article
 beautify:
-  enable: false # Beautify (美化页面显示)
+  enable: true # Beautify (美化页面显示)
   # Specify the field to beautify (site or post)
   field: post
   # Specify the icon to be used as a prefix for the title, such as '\f0c1'
