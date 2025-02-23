@@ -11,7 +11,7 @@ comments: false
 {% aplayerlist %}
 {
     "narrow": false,
-    "autoplay": true,
+    "autoplay": false,
     "mode": "random",
     "showlrc": 3,
     "mutex": true,
