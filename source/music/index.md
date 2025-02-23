@@ -30,7 +30,7 @@ comments: false
             "title": "清空",
             "author": "王忻辰&苏星婕;",
             "url": "music/playlist/清空/1.mp3",
-            "pic": "music/playlist/清空/1.mp3",
+            "pic": "music/playlist/清空/1.jpg",
             "lrc": "music/playlist/清空/1.txt"
         }
     ]
