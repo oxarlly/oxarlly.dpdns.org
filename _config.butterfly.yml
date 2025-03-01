@@ -100,7 +100,7 @@ category_img: images/categories.jpg # 分类页横幅图片，不设置则显示
 category_per_img:
 
 # The background image of footer
-footer_img: true
+footer_img: /media/bg-2.jpg
 
 # Website Background
 # Can set it to color or image url
