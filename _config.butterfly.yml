@@ -1097,7 +1097,9 @@ CDN:
     # docsearch_js:
     # egjs_infinitegrid:
     # fancybox:
+    fancybox: https://unpkg.com/@fancyapps/ui@4.0.31/dist/fancybox.umd.js
     # fancybox_css:
+    fancybox_css: https://unpkg.com/@fancyapps/ui@4.0.31/dist/fancybox.css
     # fireworks:
     # fontawesome:
     fontawesome: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css
