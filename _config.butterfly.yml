@@ -100,7 +100,7 @@ category_img: images/categories.jpg # 分类页横幅图片，不设置则显示
 category_per_img:
 
 # The background image of footer
-footer_img: false
+footer_img: true
 
 # Website Background
 # Can set it to color or image url
@@ -274,7 +274,7 @@ footer:
     since: 2019
   custom_text: 千顷文化 | 上传  無離 — Fortaleza — <a href="https://friendly-barnacle-xjg9gjwp7grf6j7j.github.dev/">管理署</a> # 千顷文化 | 上传  無離 — Fortaleza — <a href="https://friendly-barnacle-xjg9gjwp7grf6j7j.github.dev/">管理署</a>
   # Copyright of theme and framework
-  copyright: true
+  copyright: false
 
 # --------------------------------------
 # Aside Settings

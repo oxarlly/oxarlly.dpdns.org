@@ -51,6 +51,5 @@ jobs:
     - name: Deploy Hexo 
       run: |
         hexo clean
-        hexo generate 
-        gulp
+        hexo generate
         hexo deploy
