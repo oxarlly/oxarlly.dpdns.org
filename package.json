@@ -12,6 +12,7 @@
     "version": "5.4.2"
   },
   "dependencies": {
+    "gulp": "^5.0.0",
     "hexo": "^5.3.0",
     "hexo-butterfly-extjs": "^1.4.17",
     "hexo-deployer-git": "^2.1.0",
@@ -29,5 +30,12 @@
     "hexo-server": "^2.0.0",
     "hexo-tag-aplayer": "^3.0.4",
     "hexo-wordcount": "^6.0.1"
+  },
+  "devDependencies": {
+    "gulp-clean-css": "^4.3.0",
+    "gulp-fontmin": "^0.7.4",
+    "gulp-html-minifier-terser": "^7.1.0",
+    "gulp-htmlclean": "^2.7.22",
+    "gulp-terser": "^2.1.0"
   }
 }
