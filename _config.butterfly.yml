@@ -1097,10 +1097,9 @@ CDN:
     # docsearch_css:
     # docsearch_js:
     # egjs_infinitegrid:
+    egjs_infinitegrid: https://cdnjs.cloudflare.com/ajax/libs/egjs-infinitegrid/4.12.0/infinitegrid.min.js
     # fancybox:
-    fancybox: https://unpkg.com/@fancyapps/ui@4.0.31/dist/fancybox.umd.js
     # fancybox_css:
-    fancybox_css: https://unpkg.com/@fancyapps/ui@4.0.31/dist/fancybox.css
     # fireworks:
     # fontawesome:
     fontawesome: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css
@@ -1124,6 +1123,7 @@ CDN:
     # prismjs_js:
     # prismjs_lineNumber_js:
     # pjax:
+    pjax: https://cdnjs.cloudflare.com/ajax/libs/pjax/0.2.8/pjax.min.js
     # sharejs:
     # sharejs_css:
     # snackbar:
@@ -1131,6 +1131,7 @@ CDN:
     # translate:
     # twikoo:
     # typed:
+    typed: https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js
     # utils:
     # valine:
     # waline_css:
