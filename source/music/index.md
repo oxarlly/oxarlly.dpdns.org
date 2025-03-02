@@ -1,7 +1,7 @@
 ---
 title: 音乐
 date: 2019-05-17 16:14:00
-top_img: music/1.jpg
+top_img: 1.jpg
 type: "music"
 comments: false
 ---
