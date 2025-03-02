@@ -1099,9 +1099,9 @@ CDN:
     # egjs_infinitegrid:
     egjs_infinitegrid: https://cdnjs.cloudflare.com/ajax/libs/egjs-infinitegrid/4.12.0/infinitegrid.min.js
     # fancybox:
-    fancybox: https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js
+    # fancybox: https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js
     # fancybox_css:
-    fancybox_css: https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css
+    # fancybox_css: https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css
     # fireworks:
     # fontawesome:
     fontawesome: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css
