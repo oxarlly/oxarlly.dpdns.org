@@ -28,7 +28,7 @@ top_img: 1.png
 {% endtimeline %}
 {% timeline 2024 %}
 <!-- timeline 01-13 -->
-更改域名为oxarlly.github.io
+更改域名为senchin.github.io
 <!-- endtimeline -->
 <!-- timeline 01-14  -->
 与Google公司联合外交，并且增加对网站的信任
