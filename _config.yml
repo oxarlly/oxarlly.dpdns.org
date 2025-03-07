@@ -104,7 +104,7 @@ theme: butterfly
 
 deploy:
   type: git
-  repo: git@github.com:oxarlly/senchin.github.io.git
+  repo: git@github.com:senchin/senchin.github.io.git
   branch: main
   message: upload
 
