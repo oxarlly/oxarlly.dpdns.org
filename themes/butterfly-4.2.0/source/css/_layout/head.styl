@@ -348,13 +348,14 @@
           &:hover
             background: var(--text-bg-hover)
 
-          &:first-child
-            border-top-left-radius: 5px
-            border-top-right-radius: 5px
+          if hexo-config('rounded_corners_ui')
+            &:first-child
+              border-top-left-radius: 5px
+              border-top-right-radius: 5px
 
-          &:last-child
-            border-bottom-right-radius: 5px
-            border-bottom-left-radius: 5px
+            &:last-child
+              border-bottom-right-radius: 5px
+              border-bottom-left-radius: 5px
 
           a
             display: inline-block

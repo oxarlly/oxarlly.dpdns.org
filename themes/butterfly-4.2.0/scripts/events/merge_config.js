@@ -382,6 +382,7 @@ hexo.extend.filter.register('before_generate', () => {
     index_top_img_height: null,
     category_ui: null,
     tag_ui: null,
+    rounded_corners_ui: true,
     text_align_justify: false,
     background: null,
     footer_bg: false,
