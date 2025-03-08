@@ -880,6 +880,8 @@ pangu:
   enable: false
   field: site # site/post
 
+rounded_corners_ui: false
+
 # Lazyload (圖片懶加載)
 # https://github.com/verlok/vanilla-lazyload
 lazyload:
