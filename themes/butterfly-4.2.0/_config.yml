@@ -2,6 +2,8 @@
 # see https://butterfly.js.org/posts/4aa8abbe/##導航欄設置-Navigation-bar-settings
 # --------------------------------------
 
+lightbox: fancybox
+
 nav:
   logo: # image
   display_title: true
