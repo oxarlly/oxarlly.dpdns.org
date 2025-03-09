@@ -59,8 +59,9 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page
-index_img: Gallery/01/2.jpg
+index_img: media/bg.jpg
 # media/bg.jpg
+# Gallery/01/2.jpg
 
 # If the banner of page not setting, it will show the top_img
 default_top_img:
@@ -769,7 +770,7 @@ subtitle:
   # source: 2  調用一句網（簡體） https://yijuzhan.com/
   # source: 3  調用今日詩詞（簡體） https://www.jinrishici.com/
   # subtitle 會先顯示 source , 再顯示 sub 的內容
-  source: 1
+  source: 3
   # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
   sub:
     - 人无千日好，花无百日红。
