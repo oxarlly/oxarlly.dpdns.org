@@ -39,7 +39,7 @@ jobs:
     # 强制将 git remote URL 切换为 SSH 格式
     - name: Force use SSH for git remote
       run: |
-        git remote set-url origin git@github.com:senchin/senchin.github.io.git
+        git remote set-url origin git@github.com:oxarlly/oxarlly.github.io.git
                 
     # 设置 Git 信息
     - name: Setup Git Information
