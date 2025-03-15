@@ -1,0 +1,20 @@
+backend:
+  name: git-gateway
+  branch: master # 你的 Git 分支名称
+
+media_folder: "source/images" # 媒体文件存储目录
+public_folder: "images" # 媒体文件访问路径
+
+collections:
+  - name: "posts" # 内容集合名称
+    label: "Posts" # 内容集合标签
+    folder: "source/_posts" # 内容文件存储目录
+    create: true # 允许创建新内容
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # 内容文件名称
+    fields: # 内容字段
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Categories", name: "categories", widget: "list"}
+      - {label: "Featured Image", name: "featured_image", widget: "image"}
