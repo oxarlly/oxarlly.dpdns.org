@@ -22,16 +22,16 @@ comments: false
         {
             "title": "消えない温度",
             "author": "Hanon & Kotoha;",
-            "url": "http://oxarlly.97.com.mp/playlist/消えない温度/1.mp3",
-            "pic": "http://oxarlly.97.com.mp/playlist/消えない温度/1.jpg",
-            "lrc": "http://oxarlly.97.com.mp/playlist/消えない温度/1.txt"
+            "url": "https://oxarlly.github.io/music/playlist/消えない温度/1.mp3",
+            "pic": "https://oxarlly.github.io/music/playlist/消えない温度/1.jpg",
+            "lrc": "https://oxarlly.github.io/music/playlist/消えない温度/1.txt"
         },
         {
             "title": "清空",
             "author": "王忻辰&苏星婕;",
-            "url": "http://oxarlly.97.com.mp/playlist/清空/1.mp3",
-            "pic": "http://oxarlly.97.com.mp/playlist/清空/1.jpg",
-            "lrc": "http://oxarlly.97.com.mp/playlist/清空/1.txt"
+            "url": "https://oxarlly.github.io/music/playlist/清空/1.mp3",
+            "pic": "https://oxarlly.github.io/music/playlist/清空/1.jpg",
+            "lrc": "https://oxarlly.github.io/music/playlist/清空/1.txt"
         }
     ]
 }
