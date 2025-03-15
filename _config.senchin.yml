@@ -367,36 +367,30 @@ katex:
 # see https://butterfly.js.org/posts/ceeb73f/#搜索系統
 # --------------------------------------
 
-search:
-  # Choose: algolia_search / local_search / docsearch
-  # leave it empty if you don't need search
-  use: local_search # 搜索
-  placeholder:
-
 # Algolia search
-  algolia_search:
-    enable: false
-    hits:
-      per_page: 6
+algolia_search:
+  enable: false
+  hits:
+    per_page: 6
 
 # Local search
-  local_search:
-    enable: true
+local_search:
+  enable: true
   # Preload the search data when the page loads.
-    preload: false
+  preload: false
   # Show top n results per article, show all results by setting to -1
-    top_n_per_article: 1
+  top_n_per_article: 1
   # Unescape html strings to the readable one.
-    unescape: false
-    CDN:
+  unescape: false
+  CDN:
 
 # Docsearch
-  docsearch:
-    enable: false
-    appId:
-    apiKey:
-    indexName:
-    option:
+docsearch:
+  enable: false
+  appId:
+  apiKey:
+  indexName:
+  option:
 
 # Share System (分享)
 # --------------------------------------
