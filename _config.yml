@@ -29,6 +29,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+  - admin/*
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -160,6 +161,3 @@ aplayer:
   asset_inject: true                            # 自动插入 Aplayer.js 与 Meting.js 资源脚本, 默认开启
   #externalLink: http://xxx/aplayer.min.js 
 
-
-skip_render:
-  - admin/*
