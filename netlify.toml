@@ -1,0 +1,8 @@
+[build]
+  publish = "public"
+  command = "hexo generate"
+
+[[headers]]
+  for = "/*"
+    [headers.values]
+      Access-Control-Allow-Origin = "https://oaxrlly.github.io"
