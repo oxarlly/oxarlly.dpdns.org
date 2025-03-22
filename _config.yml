@@ -161,3 +161,6 @@ aplayer:
   asset_inject: true                            # 自动插入 Aplayer.js 与 Meting.js 资源脚本, 默认开启
   #externalLink: http://xxx/aplayer.min.js 
 
+netlify_cms:
+  enabled: true
+  public_folder: /
