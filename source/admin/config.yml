@@ -1,21 +1,19 @@
 backend:
-  name: git-gateway
-  branch: master # Branch to update (master by default)
+  name: github
+  repo: oxarlly/myhexo1  # 替换为你的 GitHub 仓库
+  branch: master  # 替换为你的分支名称
 
-# These lines should *not* be indented
-media_folder: "source/images" # Media files will be stored in the repo under source/images
-public_folder: "images" # The src attribute for uploaded media will begin with images
-
-# This line should *not* be indented
-publish_mode: editorial_workflow
+media_folder: "source/images"  # 媒体文件存放的目录
+public_folder: "images"  # 媒体文件对外访问的目录
 
 collections:
-  - name: "Post" # Used in routes, e.g., /admin/collections/blog
-    label: "Post" # Used in the UI
-    folder: "source/_posts" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "blog"
+    label: "Blog"
+    folder: "_posts"  # 博客文章存放的目录
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {name: "path", label: "Path"}
+      - {name: "date", label: "Date", widget: "datetime"}
+      - {name: "title", label: "Title"}
+      - {name: "body", label: "Body", widget: "markdown"}
