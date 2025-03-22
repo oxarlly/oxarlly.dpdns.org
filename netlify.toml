@@ -1,0 +1,12 @@
+[build]
+  publish = "public"
+  command = "hexo generate"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[headers]
+  [[headers."/*"]]
+    Cache-Control = "public, max-age=0, must-revalidate"
