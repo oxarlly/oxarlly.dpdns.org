@@ -1,0 +1,14 @@
+[build]
+  publish = "public"
+  command = "hexo generate"
+
+[[redirects]]
+  from = "/admin/*"
+  to = "https://sensational-treacle-4fe889.netlify.app/admin/:splat"
+  status = 301
+  force = true
+
+[headers]
+  [[headers."/*"]]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
