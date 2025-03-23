@@ -18,3 +18,14 @@
   if theme.footer.custom_text
     .footer_custom_text!= theme.footer.custom_text
 
+script(src="https://identity.netlify.com/v1/netlify-identity-widget.js")
+script.
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
