@@ -30,7 +30,7 @@
     "hexo-renderer-stylus": "^2.0.1",
     "hexo-server": "^2.0.0",
     "hexo-tag-aplayer": "^3.0.4",
-    "hexo-wordcount": "^6.0.1",
+    "hexo-wordcount": "^6.0.1"
   },
   "devDependencies": {
     "gulp-fontmin": "^0.7.4"
