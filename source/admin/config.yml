@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   repo: oxarlly/proxy-star
-  branch: master # Branch to update (master by default)
+  branch: main # Branch to update (master by default)
 
 # These lines should *not* be indented
 media_folder: "/" # Media files will be stored in the repo under source/images
