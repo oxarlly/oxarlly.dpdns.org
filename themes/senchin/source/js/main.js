@@ -928,3 +928,17 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   })
 })
+
+// 判断当前是否是 GitHub Pages
+if (!window.location.hostname.includes('github.io')) {
+  // 不是 GitHub Pages，加载 Netlify CMS
+  (function () {
+    const script = document.createElement('script');
+    script.src = 'https://unpkg.com/netlify-cms@2.10.192/dist/cms.js';
+    script.onload = function () {
+      // 初始化 Netlify CMS
+      NetlifyCms.init();
+    };
+    document.head.appendChild(script);
+  })();
+}

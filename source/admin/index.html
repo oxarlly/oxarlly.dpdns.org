@@ -1,28 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Content Manager</title>
-  <link rel="stylesheet" href="https://unpkg.com/netlify-cms@2.10.192/dist/cms.js" />
-</head>
-<body>
-  <script src="https://unpkg.com/netlify-cms@2.10.192/dist/cms.js"></script>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Conditional Code Display</title>
-</head>
-<body>
-  <div id="code-container"></div>
-
-  <script>
-    const githubCode = `<!DOCTYPE html>
-<html>
-<head>
   <meta charset="utf-8">
   <title>Netlify CMS Admin</title>
   <style>
@@ -38,39 +16,6 @@
   </style>
 </head>
 <body>
-  <iframe src="https://senchin.netlify.app/admin"></iframe>
-</body>
-</html>
-
-    `;
-
-    const netlifyCode = `<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Content Manager</title>
-  <link rel="stylesheet" href="https://unpkg.com/netlify-cms@2.10.192/dist/cms.js" />
-</head>
-<body>
-  <script src="https://unpkg.com/netlify-cms@2.10.192/dist/cms.js"></script>
-</body>
-</html>
-
-    `;
-
-    const container = document.getElementById('code-container');
-    const currentUrl = window.location.href;
-    const currentHostname = window.location.hostname;
-    const netlifyDomain = 'senchin.netlify.app'; // 替换为你的 Netlify 域名
-
-    if (currentUrl.includes('github.io') || currentHostname.includes('github.io')) {
-      container.innerHTML = githubCode;
-    } else if (currentUrl.includes(netlifyDomain) || currentHostname.includes(netlifyDomain)) {
-      container.innerHTML = netlifyCode;
-    } else {
-      container.innerHTML = `<p>Unknown environment.</p>`;
-    }
-  </script>
+  <iframe src="https://sensational-treacle-4fe889.netlify.app/admin"></iframe>
 </body>
 </html>
