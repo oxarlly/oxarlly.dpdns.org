@@ -1,44 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>CMS Admin</title>
-  <style>
-    body, html {
-      height: 100%;
-      margin: 0;
-    }
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Content Manager</title>
+  <link rel="stylesheet" href="https://unpkg.com/netlify-cms@2.10.192/dist/cms.js" />
 </head>
 <body>
-  <script>
-    // 检测当前域名
-    const currentHost = window.location.hostname;
-    
-    // 定义你的GitHub Pages和Netlify域名
-    const githubPagesDomain = 'oxarlly.github.io';
-    const netlifyDomain = 'senchin.netlify.app'; // 替换为你的实际Netlify域名
-    
-    // 根据域名显示不同的内容
-    if (currentHost === githubPagesDomain) {
-      // GitHub Pages - 显示a代码（iframe版本）
-      document.write(`
-        <iframe src="https://senchin.netlify.app/admin"></iframe>
-      `);
-    } else if (currentHost === netlifyDomain) {
-      // Netlify - 显示b代码（直接加载CMS）
-      document.write(`
-        <script src="https://unpkg.com/netlify-cms@2.10.192/dist/cms.js"></script>
-      `);
-    } else {
-      // 其他情况显示默认内容或错误信息
-      document.body.innerHTML = '<h1>无法识别的访问域名</h1>';
-    }
-  </script>
+  <script src="https://unpkg.com/netlify-cms@2.10.192/dist/cms.js"></script>
 </body>
 </html>
