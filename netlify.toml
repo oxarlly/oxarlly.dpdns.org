@@ -1,6 +1,6 @@
 [build]
   publish = "public"
-  command = "hexo generate && echo "env:\n  netlify: true" >> _config.yml"
+  command = "hexo generate"
 
 [[headers]]
   for = "/*"
