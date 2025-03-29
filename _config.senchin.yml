@@ -931,6 +931,9 @@ inject:
   bottom:
     # - <script src="xxxx"></script>
 
+env:
+  netlify: false
+
 # CDN
 # Don't modify the following settings unless you know how they work
 # 非必要請不要修改
