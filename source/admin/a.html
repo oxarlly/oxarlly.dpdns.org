@@ -1,21 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>Netlify CMS Admin</title>
-  <style>
-    body, html {
-      height: 100%;
-      margin: 0;
-    }
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-  </style>
+    <title>全屏嵌套工具</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* 强制全屏且隐藏所有父元素 */
+        html, body, iframe {
+            margin: 0;
+            padding: 0;
+            border: none;
+            overflow: hidden; /* 禁用滚动条 */
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
 </head>
 <body>
-  <iframe src="https://senchin.netlify.app/admin"></iframe>
+    <script>
+        // 方案1：通过URL参数指定目标页面
+        const urlParams = new URLSearchParams(window.location.search);
+        let targetUrl = urlParams.get('url') || 'https://example.com'; // 默认地址
+        
+        // 方案2：固定嵌套指定地址（二选一）
+        // const targetUrl = 'https://需要嵌套的网站.com'; 
+
+        // 创建全屏iframe
+        const iframe = document.createElement('iframe');
+        iframe.src = targetUrl;
+        iframe.allow = 'fullscreen'; // 启用全屏API
+        document.body.appendChild(iframe);
+
+        // 自动重试机制（应对临时加载失败）
+        iframe.onerror = function() {
+            setTimeout(() => iframe.src += '?retry=' + Date.now(), 3000);
+        };
+    </script>
 </body>
 </html>
