@@ -1,39 +1,39 @@
+<!-- 子页面 a.html -->
 <!DOCTYPE html>
 <html>
 <head>
-    <title>全屏嵌套工具</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* 强制全屏且隐藏所有父元素 */
-        html, body, iframe {
+        /* 保持全屏样式 */
+        html, body {
             margin: 0;
-            padding: 0;
-            border: none;
-            overflow: hidden; /* 禁用滚动条 */
-            width: 100%;
-            height: 100vh;
+            height: 100%;
+            overflow: auto;
         }
     </style>
 </head>
 <body>
+    <a href="https://senchin.netlify.app/">内部链接</a>
+    <a href="https://external.com">外部链接</a>
+
     <script>
-        // 方案1：通过URL参数指定目标页面
-        const urlParams = new URLSearchParams(window.location.search);
-        let targetUrl = urlParams.get('url') || 'https://senchin.netlify.app/admin/b.html'; // 默认地址
-        
-        // 方案2：固定嵌套指定地址（二选一）
-        // const targetUrl = 'https://需要嵌套的网站.com'; 
+        // 链接拦截逻辑
+        document.addEventListener('click', e => {
+            const link = e.target.closest('a');
+            if (!link) return;
 
-        // 创建全屏iframe
-        const iframe = document.createElement('iframe');
-        iframe.src = targetUrl;
-        iframe.allow = 'fullscreen'; // 启用全屏API
-        document.body.appendChild(iframe);
-
-        // 自动重试机制（应对临时加载失败）
-        iframe.onerror = function() {
-            setTimeout(() => iframe.src += '?retry=' + Date.now(), 3000);
-        };
+            const url = new URL(link.href);
+            
+            // 内部导航处理
+            if (url.hostname === 'senchin.netlify.app') {
+                e.preventDefault();
+                window.location.href = link.href; // 当前iframe内导航
+            } 
+            // 外部跳转处理
+            else {
+                e.preventDefault();
+                window.parent.postMessage(link.href, 'https://oxarlly.github.io');
+            }
+        });
     </script>
 </body>
 </html>
