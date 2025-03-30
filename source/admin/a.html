@@ -1,39 +1,20 @@
-<!-- 子页面 a.html -->
 <!DOCTYPE html>
-<html>
+<html style="margin: 0; padding: 0; height: 100%; overflow: hidden">
 <head>
     <style>
-        /* 保持全屏样式 */
-        html, body {
+        iframe {
+            border: none;
+            width: 100vw;
+            height: 100vh;
+        }
+        body {
             margin: 0;
-            height: 100%;
-            overflow: auto;
+            padding: 0;
+            overflow: hidden;
         }
     </style>
 </head>
 <body>
-    <a href="https://senchin.netlify.app/">内部链接</a>
-    <a href="https://external.com">外部链接</a>
-
-    <script>
-        // 链接拦截逻辑
-        document.addEventListener('click', e => {
-            const link = e.target.closest('a');
-            if (!link) return;
-
-            const url = new URL(link.href);
-            
-            // 内部导航处理
-            if (url.hostname === 'senchin.netlify.app') {
-                e.preventDefault();
-                window.location.href = link.href; // 当前iframe内导航
-            } 
-            // 外部跳转处理
-            else {
-                e.preventDefault();
-                window.parent.postMessage(link.href, 'https://oxarlly.github.io');
-            }
-        });
-    </script>
+<iframe src="https://senchin.netlify.app/admin/a.html"></iframe>
 </body>
 </html>
