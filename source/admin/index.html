@@ -1,38 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html style="margin: 0; padding: 0; height: 100%; overflow: hidden">
 <head>
-    <title>Dynamic Content</title>
-    <script>
-        // 根据域名动态加载不同页面
-        window.onload = function() {
-            const domain = window.location.hostname;
-            const contentDiv = document.getElementById('content');
-
-            // 定义不同域名对应的页面路径
-            const pageMap = {
-                'oxarlly.github.io': 'https://senchin.netlify.app/admin/a.html',
-                'senchin.netlify.app': 'https://oxarlly.github.io/admin/b.html'
-            };
-
-            // 创建 iframe 加载目标页面
-            const iframe = document.createElement('iframe');
-            iframe.style.width = '100%';
-            iframe.style.height = '100vh';
-            iframe.style.border = 'none';
-
-            // 根据域名设置 iframe 的 src
-            if (domain in pageMap) {
-                iframe.src = pageMap[domain];
-            } else {
-                // 默认回退逻辑（可选）
-                iframe.src = 'https://senchin.netlify.app/admin/a.html'; 
-            }
-
-            contentDiv.appendChild(iframe);
-        };
-    </script>
+    <style>
+        iframe {
+            border: none;
+            width: 100vw;
+            height: 100vh;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
-    <div id="content"></div>
+<script>
+    // 域名检测与框架嵌套
+    const host = window.location.hostname;
+    let frameUrl = '';
+
+    if (host === 'oxarlly.github.io') {
+        frameUrl = 'https://oxarlly.github.io/admin/a.html';
+    } else if (host === 'senchin.netlify.app') {
+        frameUrl = 'https://oxarlly.github.io/admin/b.html';
+    }
+
+    if (frameUrl) {
+        const iframe = document.createElement('iframe');
+        iframe.src = frameUrl;
+        document.body.appendChild(iframe);
+    }
+</script>
 </body>
 </html>
