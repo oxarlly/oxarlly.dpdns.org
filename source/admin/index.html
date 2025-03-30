@@ -1,16 +1,38 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="x-UA-Compatible" content="IE=Edge">
-        <meta name="robots" content="noindex" />
-        <title>Decap CMS</title>
-        <!-- <link rel="icon" type="image/svg+xml" sizes="180x180" href="favicon.svg"> -->
-        <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-        <link href="/admin/config.yml" type="text/yaml" rel="cms-config-url">
-    </head>
-    <body>
-        <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-    </body>
+<head>
+    <title>Dynamic Content</title>
+    <script>
+        // 根据域名动态加载不同页面
+        window.onload = function() {
+            const domain = window.location.hostname;
+            const contentDiv = document.getElementById('content');
+
+            // 定义不同域名对应的页面路径
+            const pageMap = {
+                'oxarlly.github.io': 'https://oxarlly.github.io/admin/a.html',
+                'senchin.netlify.app': 'https://oxarlly.github.io/admin/b.html'
+            };
+
+            // 创建 iframe 加载目标页面
+            const iframe = document.createElement('iframe');
+            iframe.style.width = '100%';
+            iframe.style.height = '100vh';
+            iframe.style.border = 'none';
+
+            // 根据域名设置 iframe 的 src
+            if (domain in pageMap) {
+                iframe.src = pageMap[domain];
+            } else {
+                // 默认回退逻辑（可选）
+                iframe.src = 'https://oxarlly.github.io/admin/a.html'; 
+            }
+
+            contentDiv.appendChild(iframe);
+        };
+    </script>
+</head>
+<body>
+    <div id="content"></div>
+</body>
 </html>
