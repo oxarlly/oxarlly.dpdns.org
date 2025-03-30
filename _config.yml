@@ -165,6 +165,3 @@ netlify_cms:
   enabled: true
   public_folder: /
 
-theme_config:
-  env:
-    netlify: false # 默认禁用
