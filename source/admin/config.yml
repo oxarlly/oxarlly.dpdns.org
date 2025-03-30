@@ -10,7 +10,7 @@ backend:
     openAuthoring: '{{message}}'
 
 
-logo_url: media/favicon.png # 你的 logo
+logo_url: https://oxarlly.github.io/media/favicon.png # 你的 logo
 
 
 # 禁用部署预览链接
