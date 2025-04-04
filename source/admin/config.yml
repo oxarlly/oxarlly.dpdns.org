@@ -53,9 +53,9 @@ collections:
       - {label: "评论", name: "comments", widget: "boolean", default: true, required: false}
       - {label: "置顶", name: "pin", widget: "boolean", default: false, required: false}
       - {label: "密码", name: "password", widget: "string", required: false}
-      - {label: "abstract", name: "abstract", default: "有东西被加密了, 请输入密码查看.", widget: "string", required: false}
-      - {label: "message", name: "message", default: "您好, 这里需要密码.", widget: "string", required: false}
-      - {label: "wrong_pass_message", name: "wrong_pass_message", default: "抱歉, 这个密码看着不太对, 请再试试.", widget: "string", required: false}
-      - {label: "wrong_hash_message", name: "wrong_hash_message", default: "抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.", widget: "string", required: false}
+      - {label: "abstract", name: "abstract", default: false, widget: "string", required: false}
+      - {label: "message", name: "message", default: false, widget: "string", required: false}
+      - {label: "wrong_pass_message", name: "wrong_pass_message", default: false, widget: "string", required: false}
+      - {label: "wrong_hash_message", name: "wrong_hash_message", default: false, widget: "string", required: false}
       - {label: "内容", name: "body", widget: "markdown", required: false}
 
