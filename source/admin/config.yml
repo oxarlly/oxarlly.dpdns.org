@@ -58,4 +58,4 @@ collections:
       - {label: "wrong_pass_message", name: "wrong_pass_message", default: false, widget: "string", required: false}
       - {label: "wrong_hash_message", name: "wrong_hash_message", default: false, widget: "string", required: false}
       - {label: "内容", name: "body", widget: "markdown", required: false}
-
+    preview: "admin/preview-template.js" # 指定自定义预览组件
