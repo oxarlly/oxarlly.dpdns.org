@@ -164,6 +164,3 @@ aplayer:
 netlify_cms:
   enabled: true
   public_folder: /
-
-plugins:
-  - hexo-blog-encrypt
