@@ -45,3 +45,15 @@ script.
       window.loadOtherComment = loadLivere
     }
   })()
+
+script.
+  (() => {
+    const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+    const el = document.getElementById('lv-container')
+    if (isShuoshuo) {
+      if (el.children.length) el.classList.remove('no-comment')
+      else el.classList.add('no-comment')
+    } else {
+      if (el.children.length) el.classList.remove('no-comment')
+    }
+  })()
