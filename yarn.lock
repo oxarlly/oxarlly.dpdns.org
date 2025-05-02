@@ -12155,6 +12155,11 @@ void-elements@^2.0.1:
   resolved "https://registry.npmjs.org/void-elements/-/void-elements-2.0.1.tgz"
   integrity sha1-wGavtYK7HLQSjWDqkjkulNXp2+w=
 
+vscode-web@^1.91.1:
+  version "1.91.1"
+  resolved "https://registry.npmjs.org/vscode-web/-/vscode-web-1.91.1.tgz"
+  integrity sha512-kzrbnxxmAmBDBLcTXQBM5Ehucdf35MI4pX1DHMPa6SFFg4IVKd18Qn6TrdG+VT4O4fk6nySovNP22GHky3nD8Q==
+
 vue-demi@>=0.14.8:
   version "0.14.10"
   resolved "https://registry.npmjs.org/vue-demi/-/vue-demi-0.14.10.tgz"
