@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hexo Butterfly 主题编辑器</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .editor, .config-editor {
+            margin-top: 20px;
+        }
+        .config-item {
+            margin: 10px 0;
+        }
+        label {
+            font-size: 14px;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select {
+            padding: 8px;
+            font-size: 14px;
+            width: 100%;
+            margin-top: 5px;
+        }
+        .button-group {
+            text-align: center;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .preview-area {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f1f1f1;
+            border-radius: 8px;
+        }
+        .config-item button {
+            background-color: #f44336;
+            border: none;
+            padding: 5px 10px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Hexo Butterfly 主题编辑器</h1>
+    
+    <!-- 文章编辑区 -->
+    <div class="editor">
+        <label for="article-content">编辑文章内容：</label>
+        <textarea id="article-content" rows="10" placeholder="在这里编写文章内容..."></textarea>
+    </div>
+
+    <!-- 配置文件编辑区 -->
+    <div class="config-editor">
+        <h2>配置文件</h2>
+        
+        <!-- 默认配置项不可删除 -->
+        <div class="config-item">
+            <label>是否启用导航栏：</label>
+            <input type="checkbox" id="navBar" checked> 开启导航栏
+        </div>
+
+        <div class="config-item">
+            <label>主题风格：</label>
+            <select id="theme-style">
+                <option value="default">默认</option>
+                <option value="dark">黑暗模式</option>
+                <option value="light">亮模式</option>
+            </select>
+        </div>
+
+        <!-- 自定义配置项 -->
+        <div id="custom-configs">
+            <div class="config-item">
+                <label>自定义项：</label>
+                <input type="text" id="custom-item" placeholder="输入自定义配置项名称">
+                <button type="button" onclick="addCustomConfig()">添加</button>
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button onclick="saveConfig()">保存配置</button>
+        </div>
+    </div>
+
+    <!-- 文章预览区 -->
+    <div class="preview-area">
+        <h2>文章预览</h2>
+        <div id="article-preview">
+            <!-- 在这里渲染文章预览 -->
+        </div>
+    </div>
+</div>
+
+<script>
+    // 文章内容实时预览
+    document.getElementById('article-content').addEventListener('input', function () {
+        const preview = document.getElementById('article-preview');
+        preview.innerHTML = marked(this.value);  // 使用Marked.js进行Markdown渲染
+    });
+
+    // 动态添加自定义配置项
+    function addCustomConfig() {
+        const customItemValue = document.getElementById('custom-item').value;
+        if (customItemValue.trim()) {
+            const configContainer = document.getElementById('custom-configs');
+            const newConfig = document.createElement('div');
+            newConfig.className = 'config-item';
+            newConfig.innerHTML = `
+                <label>自定义项：${customItemValue}</label>
+                <input type="text" placeholder="输入值">
+                <button type="button" onclick="removeCustomConfig(this)">删除</button>
+            `;
+            configContainer.appendChild(newConfig);
+            document.getElementById('custom-item').value = '';  // 清空输入框
+        }
+    }
+
+    // 删除自定义配置项
+    function removeCustomConfig(button) {
+        button.parentElement.remove();
+    }
+
+    // 保存配置功能
+    function saveConfig() {
+        const config = {
+            navBar: document.getElementById('navBar').checked,
+            themeStyle: document.getElementById('theme-style').value,
+            customConfigs: []
+        };
+
+        const customItems = document.querySelectorAll('#custom-configs .config-item input');
+        customItems.forEach(input => {
+            config.customConfigs.push(input.value);
+        });
+
+        console.log('保存的配置:', config);
+        alert('配置已保存！');
+        // 这里可以调用GitHub API或者其他后端接口来保存配置
+    }
+</script>
+
+<!-- 引入Marked.js 用于Markdown解析 -->
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+</body>
+</html>
