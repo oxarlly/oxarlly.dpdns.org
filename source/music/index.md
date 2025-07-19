@@ -32,6 +32,13 @@ comments: false
             "url": "https://oxarlly.github.io/music/playlist/清空/1.mp3",
             "pic": "https://oxarlly.github.io/music/playlist/清空/1.jpg",
             "lrc": "https://oxarlly.github.io/music/playlist/清空/1.txt"
+        },
+                {
+            "title": "Breathe",
+            "author": "kenzie",
+            "url": "https://lx-sycdn.kuwo.cn/c9518b6a35cdec81dacc6d327a0771e9/687b4197/resource/n1/54/12/2555581903.mp3",
+            "pic": "https://img2.kuwo.cn/star/albumcover/500/98/95/1495040590.jpg",
+            "lrc": "https://oxarlly.github.io/music/playlist/清空/1.txt"
         }
     ]
 }
