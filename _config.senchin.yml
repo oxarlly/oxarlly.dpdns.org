@@ -928,6 +928,7 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
+    - <script src="https://app.rybbit.io/api/script.js" data-site-id="1839" async defer></script>
   bottom:
     # - <script src="xxxx"></script>
 

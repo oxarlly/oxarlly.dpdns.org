@@ -9,7 +9,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <RybbitProvider siteId="YOUR_SITE_ID">
+        <RybbitProvider siteId="1839">
           {children}
         </RybbitProvider>
       </body>
