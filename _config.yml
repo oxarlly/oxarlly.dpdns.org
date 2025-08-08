@@ -127,6 +127,8 @@ kramed:
   smartLists: true
   smartypants: true
 
+tag_plugins:
+  gallery: true
 
 ## Live2D看板娘动画
 live2d: 

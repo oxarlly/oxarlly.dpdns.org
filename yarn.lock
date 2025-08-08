@@ -4388,6 +4388,11 @@ hexo-tag-aplayer@^3.0.4:
     hexo-util "^0.1.7"
     meting "^1.2.0"
 
+hexo-tag-plugins@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.npmjs.org/hexo-tag-plugins/-/hexo-tag-plugins-1.0.5.tgz"
+  integrity sha512-f6qldRwR/tgvNoVh9eV3xv6XIONTTBDZPq8fNonSpVtVJhOP9anAT2KdiXPb9N/KbRPzsk5lBjfJ+Jvf+HtM8g==
+
 hexo-util@^0.1.7:
   version "0.1.7"
   resolved "https://registry.npmjs.org/hexo-util/-/hexo-util-0.1.7.tgz"
