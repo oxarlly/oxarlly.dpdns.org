@@ -130,6 +130,8 @@ kramed:
 tag_plugins:
   gallery: true
 
+tag_plugins.gallery: true
+
 ## Live2D看板娘动画
 live2d: 
   enable: false
