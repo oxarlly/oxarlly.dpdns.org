@@ -38,7 +38,6 @@
     "next-rybbit": "^0.1.18",
     "quill": "^2.0.3",
     "react-dom": "^19.1.1",
-    "font-awesome": "^7.0.0",
     "vscode-web": "^1.91.1"
   },
   "devDependencies": {
