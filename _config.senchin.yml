@@ -983,7 +983,7 @@ CDN:
     # fireworks:
     # fontawesome:
     # fontawesome: https://unpkg.com/@fortawesome/fontawesome-free@6.1.1/css/all.min.css
-    # fontawesome: https://js-8vx.pages.dev/Font-Awesome-6.1.1/css/all.min.css
+    fontawesome: https://js-8vx.pages.dev/Font-Awesome-6.1.1/css/all.min.css
     # fontawesome: https://tc-new.z.wiki/autoupload/f/_ggbc9R-qlDbwO98IaCtotXHVzXvrKb7FDHgo_mcdAiyl5f0KlZfm6UsKj-HyTuv/20250812/r3cP/all.min.css
     # gitalk:
     # gitalk_css:
