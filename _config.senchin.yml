@@ -982,7 +982,8 @@ CDN:
     # fancybox_css:
     # fireworks:
     # fontawesome:
-    fontawesome: https://unpkg.com/@fortawesome/fontawesome-free@7.0.0/css/all.min.css
+    fontawesome: https://jsd.012700.xyz/npm/@fortawesome/fontawesome-free/css/all.min.css
+    # fontawesome: https://unpkg.com/@fortawesome/fontawesome-free@7.0.0/css/all.min.css
     # fontawesome: https://js-8vx.pages.dev/Font-Awesome-7.0.0/css/all.min.css
     # fontawesome: https://tc-new.z.wiki/autoupload/f/_ggbc9R-qlDbwO98IaCtotXHVzXvrKb7FDHgo_mcdAiyl5f0KlZfm6UsKj-HyTuv/20250812/r3cP/all.min.css
     # gitalk:
