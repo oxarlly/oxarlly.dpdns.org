@@ -327,7 +327,7 @@ footer:
   owner:
     enable: true
     since: 2022
-  custom_text: 千顷文化
+  custom_text:
   # Copyright of theme and framework
   copyright:
     enable: false
