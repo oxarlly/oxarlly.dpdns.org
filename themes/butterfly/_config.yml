@@ -18,10 +18,16 @@ nav:
   fixed: false
 
 menu:
-  # Home: / || fas fa-home
-  # List||fas fa-list:
-  #   Music: /music/ || fas fa-music
-  #   Movie: /movies/ || fas fa-video
+  首页: / || fas fa-home
+  存档||fa-solid fa-file:
+    归档: /archives/ || fas fa-archive
+    标签: /tags/ || fas fa-tags
+    分类: /categories/ || fas fa-folder-open
+  目录||fas fa-list:
+    音乐: /music/ || fas fa-music
+    视频: /movies/ || fas fa-video
+  壁纸: /Gallery/ || fas fa-images
+  时间线: /timeline/ || fas fa-timeline
 
 # --------------------------------------
 # Code Blocks Settings
@@ -48,31 +54,35 @@ code_blocks:
 social:
   # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
   # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
+  fa-brands fa-tiktok: https://www.douyin.com/user/MS4wLjABAAAATK9ov0UNhsGTPkNDu9xcJN3lCeG7TT3ZBQmbgvpQrDHqAL_-LxPyL_M4aXJ6tsAA || 抖音
+  fa-brands fa-x-twitter: https://x.com/oxarlly || Twitter
+  fas fa-envelope: mailto:jianhua37212022@gmail.com || 邮箱
 
 # --------------------------------------
 # Image Settings
 # --------------------------------------
 
-favicon: /img/favicon.png
+favicon: /media/favicon.png
 
 avatar:
-  img: /img/butterfly-icon.png
+  img: /media/avatar-o.jpg
   effect: false
 
 # Disable all banner images
 disable_top_img: false
 
 # If the banner of page not setting, it will show the default_top_img
+# default_top_img: https://oss.012700.xyz/butterfly/2024/10/index.jpg
 default_top_img:
 
 # The banner image of index page
-index_img:
+index_img: media/bg-1.jpg
 
 # The banner image of archive page
-archive_img:
+archive_img: /archives/th.jpg
 
 # Note: tag page, not tags page
-tag_img:
+tag_img: /images/tag.jpg
 
 # The banner image of tag page, you can set the banner image for each tag
 # Format:
@@ -80,7 +90,7 @@ tag_img:
 tag_per_img:
 
 # Note: category page, not categories page
-category_img:
+category_img: /images/categories.jpg
 
 # The banner image of category page, you can set the banner image for each category
 # Format:
@@ -88,7 +98,7 @@ category_img:
 category_per_img:
 
 # The background image of footer
-footer_img: false
+footer_img: media/bg-1.jpg
 
 # Website Background
 # Can set it to color or image url
@@ -101,7 +111,16 @@ cover:
   archives_enable: true
   # When cover is not set, the default cover is displayed
   default_cover:
-    # - xxx.jpg
+    # - https://oss.012700.xyz/butterfly/2024/11/butterfly-docs-changelog-cover-1.png
+    # - https://oss.012700.xyz/butterfly/2024/11/butterfly-docs-changelog-cover-2.png
+    # - https://oss.012700.xyz/butterfly/2024/11/butterfly-docs-changelog-cover-3.png
+    # - https://oss.012700.xyz/butterfly/2024/11/butterfly-docs-changelog-cover-4.png
+    # - https://oss.012700.xyz/butterfly/2024/11/butterfly-docs-changelog-cover-5.png
+    # - https://oss.012700.xyz/butterfly/2024/11/butterfly-docs-changelog-cover-6.png
+    # - https://oss.012700.xyz/butterfly/2024/11/butterfly-docs-changelog-cover-7.png
+    # - https://oss.012700.xyz/butterfly/2024/11/butterfly-docs-changelog-cover-8.png
+    # - https://oss.012700.xyz/butterfly/2024/11/butterfly-docs-changelog-cover-9.png
+    # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
 
 # Replace Broken Images
 error_img:
@@ -110,9 +129,9 @@ error_img:
 
 # A simple 404 page
 error_404:
-  enable: false
-  subtitle: 'Page Not Found'
-  background: /img/error-page.png
+  enable: true
+  subtitle: '页面找不到'
+  background: /media/page404.jpg
 
 post_meta:
   # Home Page
@@ -148,22 +167,27 @@ index_top_img_height:
 
 # The subtitle on homepage
 subtitle:
-  enable: false
+  enable: true
   # Typewriter Effect
   effect: true
   # Customize typed.js
   # https://github.com/mattboldt/typed.js/#customization
   typed_option:
+    loop: true
   # Source - Call the third-party service API (Chinese only)
   # It will show the source first, then show the content of sub
   # Choose: false/1/2/3
   # false - disable the function
   # 1 - hitokoto.cn
-  # 2 - https://api.aa1.cn/doc/yiyan.html
+  # 2 - yijuzhan.com
   # 3 - jinrishici.com
-  source: false
+  source: 3
   # If you close the typewriter effect, the subtitle will only show the first line of sub
   sub:
+    - 人无千日好，花无百日红。
+    - All good things must come to an end.
+    - 人恶人怕天不怕，人善人欺天不欺
+    - Evil is feared by man, not by Heaven; good may be oppressed by men, but not by the will of Heaven.
 
 # Article layout on the homepage
 # 1: Cover on the left, info on the right
@@ -182,8 +206,7 @@ index_layout: 3
 # false: do not show the article introduction
 index_post_content:
   method: 3
-  # If you set method to 2 or 3, the length need to config
-  length: 500
+  length: 500 # if you set method to 2 or 3, the length need to config
 
 # --------------------------------------
 # Post Settings
@@ -199,7 +222,7 @@ toc:
   scroll_percent: true
 
 post_copyright:
-  enable: true
+  enable: false
   decode: false
   author_href:
   license: CC BY-NC-SA 4.0
@@ -207,23 +230,23 @@ post_copyright:
 
 # Sponsor/reward
 reward:
-  enable: false
-  text:
+  enable: true
+  text: 赞助
   QR_code:
-    # - img: /img/wechat.jpg
-    #   link:
-    #   text: wechat
-    # - img: /img/alipay.jpg
-    #   link:
-    #   text: alipay
+    - img: /media/wechat.jpg
+      link:
+      text: 微信
+    - img: /media/alipay.jpg
+      link:
+      text: 支付宝
 
 # Post edit
 # Easily browse and edit blog source code online.
 post_edit:
-  enable: false
+  enable: true
   # url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/
   # For example: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
-  url:
+  url: https://github.com/oxarlly/myhexo1/edit/master/source/
 
 # Related Articles
 related_post:
@@ -245,25 +268,70 @@ noticeOutdate:
   # Style: simple / flat
   style: flat
   # When will it be shown
-  limit_day: 365
+  limit_day: 500
   # Position: top / bottom
   position: top
-  message_prev: It has been
-  message_next: days since the last update, the content of the article may be outdated.
+  message_prev: 距离上次更新已经过了
+  message_next: 天，文章所描述的内容可能已经过时，请留意。
 
 # --------------------------------------
 # Footer Settings
 # --------------------------------------
 footer:
   nav:
+    - width:
+      content:
+        - title: 关于我们
+          item:
+            - title: 关于
+              url: /about/
+            - title: 传送门
+              url: /link/
+    - content:
+      - title: 索引
+        item:
+          - title: 归档
+            url: /archives/
+          - title: 分类
+            url: /categories/
+          - title: 标签
+            url: /tags/
+    - content:
+      - title: 支持
+        item:
+          - title: 日共
+            url: https://www.jcp.or.jp/
+          - title: 星奈铃
+            url: https://www.youtube.com/channel/UCqTymU8oHTygrEzas_gVBFg
+    - content:
+      - title: 其他
+        item:
+          - title: 图库
+            url: /Gallery/
+          - title: 音乐
+            url: /music/
+          - title: 视频
+            url: /movies/
+    # - content:
+    #   - title: 赞助
+    #     item:
+    #       - title: 支付宝
+    #         url: https://jsd.012700.xyz/gh/jerryc127/CDN/Photo/alipay.jpg
+    #         html: "<img src='https://jsd.012700.xyz/gh/jerryc127/CDN/Photo/alipay.jpg' alt='JerryC' width='100px' height='100px'>"
+    #       - title: 微信
+    #         url: https://jsd.012700.xyz/gh/jerryc127/CDN/Photo/wechat.jpg
+    #         html: "<img src='https://jsd.012700.xyz/gh/jerryc127/CDN/Photo/wechat.jpg' alt='wechat' width='100px' height='100px'>"
+    #       - title: Stripe
+    #         url: https://buy.stripe.com/3cs6rP6YA91sbbG5kk
+    #         html: "<img src='https://jsd.012700.xyz/gh/jerryc127/CDN@m2/img/stripe.png' alt='Stripe' width='100px' height='100px'>"
   owner:
     enable: true
-    since: 2025
+    since: 2022
+  custom_text:
   # Copyright of theme and framework
   copyright:
-    enable: true
-    version: true
-  custom_text:
+    enable: false
+    version: false
 
 # --------------------------------------
 # Aside Settings
@@ -286,12 +354,12 @@ aside:
     description:
     button:
       enable: true
-      icon: fab fa-github
-      text: Follow Me
-      link: https://github.com/xxxxxx
+      icon: fab fa-youtube
+      text: 订阅
+      link: https://www.youtube.com/channel/UCupYS-zTTlOHHENztxWXI_Q
   card_announcement:
     enable: true
-    content: This is my Blog
+    content: 投稿者上<a href="https://oxarlly.github.io/link/">扩列墙</a>！
   card_recent_post:
     enable: true
     # If set 0 will show all
@@ -304,7 +372,7 @@ aside:
     sort_order:
     limit: 6
     # Unit: mins, save data to localStorage
-    storage: 10
+    storage: 5
     avatar: true
   card_categories:
     enable: true
@@ -328,7 +396,7 @@ aside:
     # Type: monthly / yearly
     type: monthly
     # Eg: YYYY年MM月
-    format: MMMM YYYY
+    format: YYYY年MM月
     # Sort of order. 1, asc for ascending; -1, desc for descending
     order: -1
     # If set 0 will show all
@@ -350,7 +418,7 @@ aside:
     # Time difference between publish date and now
     # Formal: Month/Day/Year Time or Year/Month/Day Time
     # Leave it empty if you don't enable this feature
-    runtime_date:
+    runtime_date: 2022/08/13 00:00:00
 
 # --------------------------------------
 # Bottom right button
@@ -361,11 +429,11 @@ rightside_bottom:
 
 # Conversion between Traditional and Simplified Chinese
 translate:
-  enable: false
+  enable: true
   # The text of a button
-  default: 繁
+  default: 簡
   # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
-  defaultEncoding: 2
+  defaultEncoding: 1
   # Time delay
   translateDelay: 0
   # The text of the button when the language is Simplified Chinese
@@ -385,7 +453,7 @@ darkmode:
   # autoChangeMode: 1  Following System Settings, if the system doesn't support dark mode, it will switch dark mode between 6 pm to 6 am
   # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
   # autoChangeMode: false
-  autoChangeMode: false
+  autoChangeMode: 1
   # Set the light mode time. The value is between 0 and 24. If not set, the default value is 6 and 18
   start:
   end:
@@ -399,9 +467,9 @@ rightside_scroll_percent: false
 rightside_item_order:
   enable: false
   # Default: readmode,translate,darkmode,hideAside
-  hide:
+  hide: readmode,darkmode,hideAside
   # Default: toc,chat,comment
-  show:
+  show: toc,translate,chat,comment
 
 # Animation for the bottom right config button
 rightside_config_animation: true
@@ -414,7 +482,7 @@ anchor:
   # When you scroll, the URL will update according to header id.
   auto_update: false
   # Click the headline to scroll and update the anchor
-  click_to_scroll: false
+  click_to_scroll: true
 
 photofigcaption: false
 
@@ -422,12 +490,12 @@ copy:
   enable: true
   # Add the copyright information after copied content
   copyright:
-    enable: false
+    enable: true
     limit_count: 150
 
 # Need to install the hexo-wordcount plugin
 wordcount:
-  enable: false
+  enable: true
   # Display the word count of the article in post meta
   post_wordcount: true
   # Display the time to read the article in post meta
@@ -453,11 +521,11 @@ math:
   # Leave it empty if you don't need math
   use:
   per_page: true
-  hide_scrollbar: false
+  hide_scrollbar: true
 
   mathjax:
     # Enable the contextual menu
-    enableMenu: true
+    enableMenu: false
     # Choose: all / ams / none, This controls whether equations are numbered and how
     tags: none
 
@@ -472,7 +540,7 @@ math:
 search:
   # Choose: algolia_search / local_search / docsearch
   # leave it empty if you don't need search
-  use:
+  use: local_search
   placeholder:
 
   # Algolia Search
@@ -488,6 +556,10 @@ search:
     top_n_per_article: 1
     # Unescape html strings to the readable one.
     unescape: false
+    pagination:
+      enable: true
+      # Number of search results per page
+      hitsPerPage: 8
     CDN:
 
   # Docsearch
@@ -526,7 +598,7 @@ comments:
   # Leave it empty if you don't need comments
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
   # Format of two comments system : Disqus,Waline
-  use:
+  use: Livere
   # Display the comment name next to the button
   text: true
   # Lazyload: The comment system will be load when comment element enters the browser's viewport.
@@ -540,21 +612,22 @@ comments:
 # Disqus
 # https://disqus.com/
 disqus:
-  shortname:
+  shortname: demo-jerryc-me
   # For newest comments widget
   apikey:
 
 # Alternative Disqus - Render comments with Disqus API
 # https://github.com/SukkaW/DisqusJS
 disqusjs:
-  shortname:
-  apikey:
+  shortname: demo-jerryc-me
+  apikey: nrSx8ZhuHvjwDeKauPZ3lMnyLb7iR92BT4wl4AlKG4eJl27jxXlzOeLQ9SJP1RDW
   option:
+    siteName: JerryC
 
 # Livere
 # https://www.livere.com/
 livere:
-  uid:
+  uid: MTAyMC81OTAzNy8zNTQ5OQ==
 
 # Gitalk
 # https://github.com/gitalk/gitalk
@@ -582,11 +655,15 @@ valine:
 # Waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
 waline:
-  serverURL:
-  bg:
-  # Use Waline pageview count as the page view count
+  serverURL: https://btf-waline.crazywong.com # Waline server address url
+  bg: /img/comment_bg.png # waline background
   pageview: false
   option:
+    placeholder: '請先查看文檔再詢問。主題如有報錯，請試着解決。提問題時請詳細描述遇到的問題，附上相關的報錯 / 截圖 / 網址。'
+    pageSize: 8
+    lang: zh-TW
+    requiredFields: ['nick', 'mail']
+    turnstileKey: '0x4AAAAAAAEZ30ewaSLVUAOl'
 
 # Utterances
 # https://utteranc.es/
@@ -609,12 +686,12 @@ facebook_comments:
   pageSize: 10
   # Choose: social / time / reverse_time
   order_by: social
-  lang: en_US
+  lang: zh_TW
 
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId:
+  envId: https://btf-twikoo.vercel.app
   region:
   # Use Twikoo visitor count as the page view count
   visitor: false
@@ -641,11 +718,11 @@ remark42:
 # Artalk
 # https://artalk.js.org/guide/frontend/config.html
 artalk:
-  server:
-  site:
-  # Use Artalk visitor count as the page view count
+  server: https://artalk.crazywong.com
+  site: Butterfly-Docs
   visitor: false
   option:
+
 
 # --------------------------------------
 # Chat Services
@@ -691,17 +768,18 @@ microsoft_clarity:
 
 # https://umami.is/
 umami_analytics:
-  enable: false
+  enable: true
   # For self-hosted setups, configure the hostname of the Umami instance
-  serverURL:
-  website_id:
+  serverURL: https://umami.012700.xyz/
+  script_name: script.js
+  website_id: 2a796d6c-6499-42d8-8eb4-d9a2930b0ff3
   option:
   UV_PV:
-    site_uv: false
-    site_pv: false
-    page_pv: false
+    site_uv: true
+    site_pv: true
+    page_pv: true
     # Umami Cloud (API key) / self-hosted Umami (token)
-    token:
+    token: qTvz1SkmPDt785fgh6BpiA5qiFFIVUwxj8Ft+rPW+cdN59v1hXjwRgSmy0+ji9m+oLlcxvo2NfDSMa6epVl3NTlsN3ejCIwWeP8Y51aEJ0Sbem4UexGmJLspB7AkOBId2SdtT6QWEBlGmFIIQgchQ2zAKYxTmc/kpBED5aLSr+3uvmQ9/G7FJQeVFpveDkK0xM1hu36xq4a6/FSeROxtoEp5zabzTWiYTlLsQzIl/NlELnCq3nxK+oo/vl3UQo/oM/rae/gJX/MaVKsgIUCd2ABJogNkx2KTenBIBpbPki5FzOgPh6/z4GPa4HvhNO51DDVG1SEQZooqEYmt/gnybLBWFbN+7liZWw==
 
 # https://www.googletagmanager.com/
 google_tag_manager:
@@ -716,30 +794,29 @@ google_tag_manager:
 # Google Adsense
 google_adsense:
   enable: false
-  auto_ads: true
+  auto_ads: false
   js: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
   client:
   enable_page_level_ads: true
 
 # Insert ads manually
 # Leave it empty if you don't need ads
-ad:
-  # Insert ads in the index (every three posts)
-  index:
-  # Insert ads in aside
-  aside:
-  # Insert ads in the post (before pagination)
-  post:
+# ad:
+#   index: <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-8919908724705274" data-ad-slot="1538867630"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+#   aside: <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8919908724705274" data-ad-slot="8108145410" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+#   post: <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-8919908724705274" data-ad-slot="5978969231"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 
 # --------------------------------------
 # Verification
 # --------------------------------------
 
 site_verification:
-  # - name: google-site-verification
-  #   content: xxxxxx
-  # - name: baidu-site-verification
-  #   content: xxxxxxx
+#   - name: google-site-verification
+#     content: NdIUXAOVyGnnBhcrip0ksCawbdAzT0hlBZDE9u4jx6k
+#   - name: msvalidate.01
+#     content: 567E47D75E8DCF1282B9623AD914701E
+#   - name: baidu-site-verification
+#     content: code-pE5rnuxcfD
 
 # --------------------------------------
 # Beautify / Effect
@@ -769,11 +846,11 @@ site_verification:
 # The user interface setting of category and tag page
 # Choose: index - same as Homepage UI / default - same as archives UI
 # leave it empty or index
-category_ui:
-tag_ui:
+category_ui: index
+tag_ui: index
 
 # Rounded corners for UI elements
-rounded_corners_ui: true
+rounded_corners_ui: false
 
 # Stretches the lines so that each line has equal width
 text_align_justify: false
@@ -801,26 +878,26 @@ display_mode: light
 
 # Configuration for beautifying the content of the article
 beautify:
-  enable: false
+  enable: true
   # Specify the field to beautify (site or post)
   field: post
   # Specify the icon to be used as a prefix for the title, such as '\f0c1'
-  title_prefix_icon:
+  title_prefix_icon: '\f0c1'
   # Specify the color of the title prefix icon, such as '#F47466'
-  title_prefix_icon_color:
+  title_prefix_icon_color: '#F47466'
 
 # Global font settings
 # Don't modify the following settings unless you know how they work
 font:
-  global_font_size:
-  code_font_size:
-  font_family:
-  code_font_family:
+  global-font-size:
+  code-font-size:
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Lato, Roboto, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
+  code-font-family: consolas, Menlo, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
 
 # Font settings for the site title and site subtitle
 blog_title_font:
-  font_link:
-  font_family:
+  font_link: https://fonts.googleapis.com/css?family=Titillium+Web&display=swap
+  font_family: Titillium Web, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif
 
 # The setting of divider icon
 hr_icon:
@@ -854,7 +931,7 @@ canvas_ribbon:
 
 # Fluttering Ribbon
 canvas_fluttering_ribbon:
-  enable: false
+  enable: true
   mobile: false
 
 # canvas_nest
@@ -901,7 +978,7 @@ clickShowText:
 # https://github.com/francoischalifour/medium-zoom
 # https://fancyapps.com/fancybox/
 # Leave it empty if you don't need lightbox
-lightbox:
+lightbox: fancybox
 
 # --------------------------------------
 # Tag Plugins settings
@@ -909,7 +986,7 @@ lightbox:
 
 # Series
 series:
-  enable: false
+  enable: true
   # Order by title or date
   orderBy: 'title'
   # Sort of order. 1, asc for ascending; -1, desc for descending
@@ -927,7 +1004,7 @@ abcjs:
 mermaid:
   enable: false
   # Write Mermaid diagrams using code blocks
-  code_write: false
+  code_write: true
   # built-in themes: default / forest / dark / neutral
   theme:
     light: default
@@ -936,21 +1013,21 @@ mermaid:
 # chartjs
 # see https://www.chartjs.org/docs/latest/
 chartjs:
-  enable: false
+  enable: true
   # Do not modify unless you understand how they work.
   # The default settings are only used when the MD syntax is not specified.
   # General font color for the chart
   fontColor:
-    light: 'rgba(0, 0, 0, 0.8)'
-    dark: 'rgba(255, 255, 255, 0.8)'
+    light: "rgba(0, 0, 0, 0.8)"
+    dark: "rgba(255, 255, 255, 0.8)"
   # General border color for the chart
   borderColor:
-    light: 'rgba(0, 0, 0, 0.1)'
-    dark: 'rgba(255, 255, 255, 0.2)'
+    light: "rgba(0, 0, 0, 0.1)"
+    dark: "rgba(255, 255, 255, 0.2)"
   # Background color for scale labels on radar and polar area charts
   scale_ticks_backdropColor:
-    light: 'transparent'
-    dark: 'transparent'
+    light: "transparent"
+    dark: "transparent"
 
 # Note - Bootstrap Callout
 note:
@@ -961,7 +1038,7 @@ note:
   #  - disabled  disable all CSS styles import of note tag.
   style: flat
   icons: true
-  border_radius: 3
+  border_radius: 0
   # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
   # Offset also applied to label tag variables. This option can work with disabled note tag.
   light_bg_offset: 0
@@ -999,13 +1076,13 @@ instantpage: false
 # Lazyload
 # https://github.com/verlok/vanilla-lazyload
 lazyload:
-  enable: false
+  enable: true
   # Use browser's native lazyload instead of vanilla-lazyload
   native: false
   # Specify the field to use lazyload (site or post)
   field: site
   placeholder:
-  blur: false
+  blur: true
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
@@ -1043,6 +1120,7 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
+    - <script src="https://app.rybbit.io/api/script.js" data-site-id="1839" async defer></script>
   bottom:
     # - <script src="xxxx"></script>
 
@@ -1053,15 +1131,15 @@ CDN:
   # Options for both: local/jsdelivr/unpkg/cdnjs/custom
   # Note: Dev version can only use 'local' for internal scripts
   # Note: When setting third-party scripts to 'local', you need to install hexo-butterfly-extjs
-  internal_provider: local
-  third_party_provider: jsdelivr
+  internal_provider: custom
+  third_party_provider: custom
 
   # Add version number to url, true or false
   version: false
 
   # Custom format
   # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
-  custom_format:
+  custom_format: https://jsd.012700.xyz/npm/${name}/${min_file} # https://jsd.012700.xyz/npm/${name}@${version}/${min_file}
 
   option:
     # abcjs_basic_js:
@@ -1089,6 +1167,7 @@ CDN:
     # fancybox_css:
     # fireworks:
     # fontawesome:
+    # fontawesome: https://unpkg.com/@fortawesome/fontawesome-free@6.1.1/css/all.min.css
     # gitalk:
     # gitalk_css:
     # giscus:
@@ -1117,5 +1196,5 @@ CDN:
     # typed:
     # utils:
     # valine:
-    # waline_css:
-    # waline_js:
+    # waline_css: https://jsd.012700.xyz/npm/@waline/client@latest/dist/waline.css
+    # waline_js: https://jsd.012700.xyz/npm/@waline/client@latest/dist/waline.umd.min.js
