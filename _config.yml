@@ -113,7 +113,9 @@ deploy:
 
 # 搜索
 search:
+  enable: true
   path: search.xml
+  type: local
   field: post
   content: true
 
