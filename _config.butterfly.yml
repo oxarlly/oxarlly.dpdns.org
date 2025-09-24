@@ -304,14 +304,11 @@ footer:
           - title: 星奈铃
             url: https://www.youtube.com/channel/UCqTymU8oHTygrEzas_gVBFg
     - content:
-      - title: 其他
+      - title: 举报
         item:
-          - title: 图库
-            url: /Gallery/
-          - title: 音乐
-            url: /music/
-          - title: 视频
-            url: /movies/
+          - title: 全国“扫黄打非”工作小组办公室
+          - title: 010-65233456  65212870
+          - title: http://www.shdf.gov.cn/
     # - content:
     #   - title: 赞助
     #     item:
