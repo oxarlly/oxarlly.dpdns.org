@@ -113,11 +113,10 @@ deploy:
 
 # 搜索
 search:
-  enable: true
   path: search.xml
-  type: local
   field: post
-  content: true
+  format: html
+  limit: 10000
 
 # 数学
 kramed:

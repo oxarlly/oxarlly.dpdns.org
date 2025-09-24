@@ -894,7 +894,7 @@ font:
   font-family:
   code-font-family:
 
-# Font settings for the site title and site subtitle
+# Font settings for the sitfe title and site subtitle
 blog_title_font:
   font_link:
   font_family:
