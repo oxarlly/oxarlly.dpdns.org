@@ -542,11 +542,13 @@ search:
 
   # Algolia Search
   algolia_search:
+    enable: false
     # Number of search results per page
     hitsPerPage: 6
 
   # Local Search
   local_search:
+    enable: true
     # Preload the search data when the page loads.
     preload: false
     # Show top n results per article, show all results by setting to -1
@@ -584,6 +586,7 @@ share:
   # AddToAny
   # https://www.addtoany.com/
   addtoany:
+    enable: false
     item: facebook,twitter,wechat,sina_weibo,facebook_messenger,email,copy_link
 
 # --------------------------------------

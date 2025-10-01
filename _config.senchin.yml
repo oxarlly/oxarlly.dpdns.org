@@ -942,12 +942,12 @@ CDN:
   # The CDN provider of internal scripts (主題內部 js 的 cdn 配置)
   # option: local/jsdelivr/unpkg/cdnjs/custom
   # Dev version can only choose. ( dev版的主題只能設置為 local )
-  internal_provider: local
+  internal_provider: custom
 
   # The CDN provider of third party scripts (第三方 js 的 cdn 配置)
   # option: local/jsdelivr/unpkg/cdnjs/custom
   # when set it to local, you need to install hexo-butterfly-extjs
-  third_party_provider: unpkg
+  third_party_provider: custom
   # elemecdn
 
   # Add version number to url, true or false
@@ -955,7 +955,7 @@ CDN:
 
   # Custom format
   # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
-  custom_format:
+  custom_format: https://jsd.012700.xyz/npm/${name}/${min_file}
 
   option:
     # abcjs_basic_js:
@@ -982,7 +982,7 @@ CDN:
     # fancybox_css:
     # fireworks:
     # fontawesome:
-    fontawesome: https://jsd.012700.xyz/npm/@fortawesome/fontawesome-free/css/all.min.css
+    # fontawesome: https://jsd.012700.xyz/npm/@fortawesome/fontawesome-free/css/all.min.css
     # fontawesome: https://unpkg.com/@fortawesome/fontawesome-free@7.0.0/css/all.min.css
     # fontawesome: https://js-8vx.pages.dev/Font-Awesome-7.0.0/css/all.min.css
     # fontawesome: https://tc-new.z.wiki/autoupload/f/_ggbc9R-qlDbwO98IaCtotXHVzXvrKb7FDHgo_mcdAiyl5f0KlZfm6UsKj-HyTuv/20250812/r3cP/all.min.css

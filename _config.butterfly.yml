@@ -542,11 +542,13 @@ search:
 
   # Algolia Search
   algolia_search:
+    enable: false
     # Number of search results per page
     hitsPerPage: 6
 
   # Local Search
   local_search:
+    enable: true
     # Preload the search data when the page loads.
     preload: false
     # Show top n results per article, show all results by setting to -1
@@ -584,6 +586,7 @@ share:
   # AddToAny
   # https://www.addtoany.com/
   addtoany:
+    enable: false
     item: facebook,twitter,wechat,sina_weibo,facebook_messenger,email,copy_link
 
 # --------------------------------------
@@ -609,17 +612,17 @@ comments:
 # Disqus
 # https://disqus.com/
 disqus:
-  shortname: demo-jerryc-me
+  shortname:
   # For newest comments widget
   apikey:
 
 # Alternative Disqus - Render comments with Disqus API
 # https://github.com/SukkaW/DisqusJS
 disqusjs:
-  shortname: demo-jerryc-me
-  apikey: nrSx8ZhuHvjwDeKauPZ3lMnyLb7iR92BT4wl4AlKG4eJl27jxXlzOeLQ9SJP1RDW
+  shortname:
+  apikey:
   option:
-    siteName: JerryC
+    siteName:
 
 # Livere
 # https://www.livere.com/

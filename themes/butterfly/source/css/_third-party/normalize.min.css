@@ -99,7 +99,8 @@ select {
 [type=reset],
 [type=submit],
 button {
-  -webkit-appearance: button
+  -webkit-appearance: button;
+  appearance: button
 }
 
 [type=button]::-moz-focus-inner,
@@ -151,6 +152,7 @@ textarea {
 
 [type=search] {
   -webkit-appearance: textfield;
+  appearance: textfield;
   outline-offset: -2px
 }
 
