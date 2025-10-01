@@ -42,8 +42,5 @@
     "quill": "^2.0.3",
     "react-dom": "^19.1.1",
     "vscode-web": "^1.91.1"
-  },
-  "devDependencies": {
-    "gulp-fontmin": "^0.7.4"
   }
 }
