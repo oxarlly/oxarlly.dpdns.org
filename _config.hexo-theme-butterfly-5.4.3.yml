@@ -19,6 +19,7 @@ menu:
     视频: /movies/ || fas fa-video
   壁纸: /Gallery/ || fas fa-images
   时间线: /timeline/ || fas fa-timeline
+  动态: /live/ || fas fa-comments
 
 # Code Blocks (代碼相關)
 # --------------------------------------
@@ -783,10 +784,10 @@ display_mode: light
 
 # Beautify (美化頁面顯示)
 beautify:
-  enable: false
+  enable: true
   field: post # site/post
-  title-prefix-icon: # '\f0c1'
-  title-prefix-icon-color: # '#F47466'
+  title-prefix-icon: '\f0c1'
+  title-prefix-icon-color: '#F47466'
 
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
@@ -805,8 +806,8 @@ blog_title_font:
 # The setting of divider icon (水平分隔線圖標設置)
 hr_icon:
   enable: true
-  icon: # the unicode value of Font Awesome icon, such as '\3423'
-  icon-top:
+  icon: '\3423' # the unicode value of Font Awesome icon, such as '\3423'
+  icon-top: -13px # the position of icon
 
 # the subtitle on homepage (主頁subtitle)
 subtitle:
