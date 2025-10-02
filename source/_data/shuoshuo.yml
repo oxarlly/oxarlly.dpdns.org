@@ -3,7 +3,7 @@
   date: 2024-09-21 23:33:26
   key: key-1
   content: |
-  台风
+    台风
 {% gallery %}
 ![](/live/1/1.jpg)
 ![](/live/1/2.jpg)
