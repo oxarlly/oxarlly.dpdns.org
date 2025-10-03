@@ -1006,7 +1006,7 @@ CDN:
 
   # Custom format
   # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
-  custom_format: https://cdn.bootcdn.net/ajax/libs/${name}/${version}/${verType}/${min_file}
+  custom_format: https://cdn.bootcdn.net/ajax/libs/${cdnjs_name}/${version}/${min_cdnjs_file}
   # https://jsd.012700.xyz/npm/${name}/${min_file}
   # https://jsd.012700.xyz/npm/${name}@${version}/${min_file}
 
