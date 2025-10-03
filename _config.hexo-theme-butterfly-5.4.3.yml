@@ -993,12 +993,12 @@ CDN:
   # The CDN provider of internal scripts (主題內部 js 的 cdn 配置)
   # option: local/jsdelivr/unpkg/cdnjs/custom
   # Dev version can only choose. ( dev版的主題只能設置為 local )
-  internal_provider: local
+  internal_provider: custom
 
   # The CDN provider of third party scripts (第三方 js 的 cdn 配置)
   # option: local/jsdelivr/unpkg/cdnjs/custom
   # when set it to local, you need to install hexo-butterfly-extjs
-  third_party_provider: unpkg
+  third_party_provider: custom
   # elemecdn
 
   # Add version number to url, true or false
@@ -1006,7 +1006,7 @@ CDN:
 
   # Custom format
   # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
-  custom_format: https://jsd.012700.xyz/npm/${name}/${min_file} # https://jsd.012700.xyz/npm/${name}@${version}/${min_file}
+  custom_format: https://jsd.012700.xyz/npm/${name}/${min_file}   # https://jsd.012700.xyz/npm/${name}@${version}/${min_file}
 
   option:
     # abcjs_basic_js:
