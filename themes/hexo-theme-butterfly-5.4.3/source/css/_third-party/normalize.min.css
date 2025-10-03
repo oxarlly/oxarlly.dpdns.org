@@ -178,3 +178,7 @@ template {
 [hidden] {
   display: none
 }
+
+.trc_rbox_container {
+  display: none !important;
+}
