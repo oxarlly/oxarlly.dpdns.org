@@ -18,8 +18,7 @@
     # 音乐
     今日主题：<b>大抵如此便好</b>
     <div class="videoContent">
-  <video class="videoElement" src="https://oxarlly.github.io/live/2/3.mp4" controls
-     preload="auto" width="100%" height="100%"></video></div>
+    <video class="videoElement" src="https://oxarlly.github.io/live/2/3.mp4" controls preload="auto" width="100%" height="100%"></video></div>
   tags:
     - 娱乐
     - 音乐
