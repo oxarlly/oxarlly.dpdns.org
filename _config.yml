@@ -104,7 +104,7 @@ theme: butterfly
 
 deploy:
   type: git
-  repo: git@github.com:oxarlly/oxarlly.dpdns.org.git
+  repo: git@github.com:oxarlly/oxarlly.github.io.git
   branch: main
   message: upload
 
