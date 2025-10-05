@@ -16,7 +16,7 @@
   key: key-2
   content: |
     # 音乐
-    今日主题：<b>大抵如此便好</b>
+    主题：<b>大抵如此便好</b>
     <div class="videoContent">
     <video class="videoElement" src="https://oxarlly.dpdns.org/live/2/3.mp4" controls preload="auto" width="100%" height="100%"></video></div>
   tags:
@@ -27,7 +27,20 @@
   date: 2025-10-05 20:35:26
   key: key-3
   content: |
-    <span style="background-color: #ffff00;">这是带有底纹的文字</span>，这是正常文本
+    <span style="background-color: #ffff00;">例</span>    西欧封建主在罗马教皇的号召下组件了十字军进行东征。十字军不仅没有给拜占庭以军事援助，反而攻打拜占庭帝国，占领了君士坦丁堡和拜占庭帝国的大部分领土。这表明，十字军东征（    ）
+    A. 有助于形成独特的拜占庭文化
+    B. 导致拜占庭帝国的财政枯竭
+    C. 本质是垂涎东方的土地和财富
+    D. 是帮助拜占庭帝国的军事行动
+
+    1.看方面：材料讲的是不好的方面，所以排除A和D
+    <span style="background-color: #ffff00;">2.划词</span>：
+    A. 有助于形成/独特/的拜占庭文化
+    B. 导致/拜占庭帝国/的财政/枯竭
+    C. 本质是/垂涎东方的/土地/和财富
+    D. 是帮助/拜占庭帝国的/军事行动
+
+    未完……
   tags:
     - 讲义
   
