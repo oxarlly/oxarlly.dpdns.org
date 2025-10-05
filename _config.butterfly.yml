@@ -19,6 +19,7 @@ menu:
     视频: /movies/ || fas fa-video
   壁纸: /Gallery/ || fas fa-images
   时间线: /timeline/ || fas fa-timeline
+  动态: /live/ || fas fa-comments
 
 # Code Blocks (代碼相關)
 # --------------------------------------
