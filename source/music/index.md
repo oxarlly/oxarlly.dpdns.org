@@ -32,7 +32,15 @@ comments: false
             "url": "https://oxarlly.dpdns.org/music/mp3/清空.mp3",
             "pic": "https://oxarlly.dpdns.org/music/pic/清空.jpg",
             "lrc": "https://oxarlly.dpdns.org/music/lrc/清空.txt"
+        },
+        {
+            "title": "Something Just Like This",
+            "author": "The Chainsmokers&Coldplay",
+            "url": "https://oxarlly.dpdns.org/music/mp3/Something Just Like This.mp3",
+            "pic": "https://oxarlly.dpdns.org/music/pic/Something Just Like This.jpg",
+            "lrc": "https://oxarlly.dpdns.org/music/lrc/Something Just Like This.lrc"
         }
+
     ]
 }
 {% endaplayerlist %}
