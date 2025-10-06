@@ -1,6 +1,6 @@
 - author: 無量 — Multitudinous
   avatar: https://oxarlly.dpdns.org/media/avatar-o.jpg
-  date: 2024-09-21 23:33:26
+  date: 2025-09-21 23:33:26
   key: key-1
   content: |
     台风
@@ -16,9 +16,37 @@
   key: key-2
   content: |
     # 音乐
-    今日主题：<b>大抵如此便好</b>
+    主题：<b>大抵如此便好</b>
     <div class="videoContent">
     <video class="videoElement" src="https://oxarlly.dpdns.org/live/2/3.mp4" controls preload="auto" width="100%" height="100%"></video></div>
   tags:
     - 娱乐
     - 音乐
+- author: 無量 — Multitudinous
+  avatar: https://oxarlly.dpdns.org/media/avatar-o.jpg
+  date: 2025-10-05 20:35:26
+  key: key-3
+  content: |
+    <b>例</b>&ensp;&ensp;西欧封建主在罗马教皇的号召下组件了十字军进行东征。十字军不仅没有给拜占庭以军事援助，反而攻打拜占庭帝国，占领了君士坦丁堡和拜占庭帝国的大部分领土。这表明，十字军东征（&ensp;&ensp;）
+    A. 有助于形成独特的拜占庭文化
+    B. 导致拜占庭帝国的财政枯竭
+    C. 本质是垂涎东方的土地和财富
+    D. 是帮助拜占庭帝国的军事行动
+
+    1.看方面：材料讲的是不好的方面，所以排除A和D<span style="background-color: #ffff00;">（暂时）</span>
+    
+    <span style="background-color: #ffff00;">2.划词</span>：
+    A. 有助于形成/独特/的拜占庭文化
+    B. 导致/拜占庭帝国/的财政/枯竭
+    C. 本质是/垂涎东方的/土地/和财富
+    D. 是帮助/拜占庭帝国的/军事行动
+
+    3.把材料没有提及到的短语画下划线：（<span style="background-color: #ffff00;">材料没讲就不选</span>，留作题依据）
+    A. 有助于形成/独特/的<u>拜占庭文化</u>
+    B. 导致/拜占庭帝国/的<u>财政</u>/枯竭
+    C. 本质是/垂涎东方的/土地/和财富
+    D. 是<u>帮助</u>/拜占庭帝国的/军事行动
+    未完……
+  tags:
+    - 讲义
+  
