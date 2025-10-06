@@ -16,7 +16,7 @@
     "element-ui": "^2.15.14",
     "hexo": "^7.3.0",
     "hexo-blog-passwd": "^3.2.2",
-    "hexo-butterfly-extjs": "^1.4.17",
+    "hexo-butterfly-extjs": "^1.4.15",
     "hexo-cli": "^4.3.2",
     "hexo-deployer-git": "^4.0.0",
     "hexo-filter-nofollow": "^2.0.2",
