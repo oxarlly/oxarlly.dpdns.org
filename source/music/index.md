@@ -40,7 +40,13 @@ comments: false
             "pic": "https://oxarlly.dpdns.org/music/pic/Something Just Like This.jpg",
             "lrc": "https://oxarlly.dpdns.org/music/lrc/Something Just Like This.lrc"
         }
-
+        {
+            "title": "Daylight",
+            "author": "Seredris",
+            "url": "https://oxarlly.dpdns.org/music/mp3/Daylight.mp3",
+            "pic": "https://oxarlly.dpdns.org/music/pic/Daylight.jpg",
+            "lrc": "https://oxarlly.dpdns.org/music/lrc/Daylight.lrc"
+        }
     ]
 }
 {% endaplayerlist %}
