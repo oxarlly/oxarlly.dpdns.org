@@ -62,6 +62,8 @@ function ChildComponent({ onClick }) {
 *   仔细检查依赖项数组，确保包含所有需要监听的值。
 *   可以使用 ESLint 插件 (例如 `eslint-plugin-react-hooks`) 来检查 Hooks 的使用是否正确。
 
+---
+
 ## 2. 使用 `useMemo` 缓存计算结果
 
 ### 问题
