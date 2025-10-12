@@ -46,6 +46,13 @@ comments: false
             "url": "https://oxarlly.dpdns.org/music/mp3/Daylight.mp3",
             "pic": "https://oxarlly.dpdns.org/music/pic/Daylight.jpg",
             "lrc": "https://oxarlly.dpdns.org/music/lrc/Daylight.lrc"
+        },
+        {
+            "title": "心做し",
+            "author": "双笙 (陈元汐)",
+            "url": "https://oxarlly.dpdns.org/music/mp3/心做し.mp3",
+            "pic": "https://oxarlly.dpdns.org/music/pic/心做し.jpg",
+            "lrc": "https://oxarlly.dpdns.org/music/lrc/心做し.lrc"
         }
     ]
 }
