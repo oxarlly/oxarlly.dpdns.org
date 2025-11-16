@@ -48,6 +48,13 @@ comments: false
             "lrc": "https://oxarlly.dpdns.org/music/lrc/Daylight.lrc"
         },
         {
+            "title": "习惯失恋",
+            "author": "容祖儿",
+            "url": "https://oxarlly.dpdns.org/music/mp3/习惯失恋-容祖儿.mp3",
+            "pic": "https://oxarlly.dpdns.org/music/pic/习惯失恋-容祖儿.jpg",
+            "lrc": "https://oxarlly.dpdns.org/music/lrc/习惯失恋-容祖儿.lrc"
+        },
+        {
             "title": "孤雏",
             "author": "AGA",
             "url": "https://oxarlly.dpdns.org/music/mp3/孤雏-AGA.mp3",
