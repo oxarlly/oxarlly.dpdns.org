@@ -23,7 +23,10 @@ copyright_url:
 copyright_info:
 ---
 
-
+<font color="green">第二次投稿更新数据</font>
+{% note info modern %}
+有问题，请发邮件到`creator@oxarlly.dpdns.org`
+{% endnote %}
 [工具下载](https://www.downloadnth.com/download.html)
 
 ![页面、操作](images/proxies/1.png)
