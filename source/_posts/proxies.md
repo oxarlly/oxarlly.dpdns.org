@@ -23,7 +23,7 @@ copyright_url:
 copyright_info:
 ---
 
-<font color="green">第二次投稿更新数据</font>
+
 {% note info modern %}
 有问题，请发邮件到`creator@oxarlly.dpdns.org`
 {% endnote %}
