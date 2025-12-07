@@ -3772,13 +3772,6 @@ hexo-i18n@^2.0.0:
   dependencies:
     sprintf-js "^1.1.2"
 
-hexo-lazyload-image@^1.1.3:
-  version "1.1.3"
-  resolved "https://registry.npmjs.org/hexo-lazyload-image/-/hexo-lazyload-image-1.1.3.tgz"
-  integrity sha512-ZjAd1p/3iNaDnXWPkODfZ1unhcd1nU4lhqdf/n4HWQK07cLerx2Vakt6+aKnuFXT2QBA9n1Mx4JoZ1BKOAV1Lw==
-  dependencies:
-    uglify-js "^3.17.4"
-
 hexo-log@^0.2.0:
   version "0.2.0"
   resolved "https://registry.npmjs.org/hexo-log/-/hexo-log-0.2.0.tgz"
@@ -7804,11 +7797,6 @@ ufo@^1.6.1:
   version "1.6.1"
   resolved "https://registry.npmjs.org/ufo/-/ufo-1.6.1.tgz"
   integrity sha512-9a4/uxlTWJ4+a5i0ooc1rU7C7YOw3wT+UGqdeNNHWnOF9qcMBgLRS+4IYUqbczewFx4mLEig6gawh7X6mFlEkA==
-
-uglify-js@^3.17.4:
-  version "3.19.3"
-  resolved "https://registry.npmjs.org/uglify-js/-/uglify-js-3.19.3.tgz"
-  integrity sha512-v3Xu+yuwBXisp6QYTcH4UbH+xYJXqnq2m/LtQVWKWzYc1iehYnLixoQDN9FH6/j9/oybfd6W9Ghwkl8+UMKTKQ==
 
 unbox-primitive@^1.1.0:
   version "1.1.0"

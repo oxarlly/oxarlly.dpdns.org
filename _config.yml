@@ -173,3 +173,13 @@ encrypt: # hexo-blog-encrypt
   message: 请输入密码
   wrong_pass_message: 密码错误
   wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.
+
+# Hexo 根目录下的 _config.yml 文件
+# --- Tinify (TinyPNG) 配置 ---
+tinify:
+  key: 4Hk83Q4xwqTpBBWsvRGKJRBm8LtdtYCY
+  # 是否启用压缩（可选，默认为 true）
+  enable: true 
+  # 要压缩的目录路径（可选，推荐保留默认或指定 post/assets 目录）
+  dir: source/**/*.{jpg,jpeg,png}
+  # dir: source/images/**/* # 如果您的图片统一放在 source/images 下
