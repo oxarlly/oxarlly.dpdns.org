@@ -15,7 +15,6 @@
     "@fancyapps/fancybox": "^3.5.7",
     "element-ui": "^2.15.14",
     "hexo": "^7.3.0",
-    "hexo-asset-pipeline": "^1.8.0",
     "hexo-blog-passwd": "^3.2.2",
     "hexo-butterfly-extjs": "^1.4.10",
     "hexo-cli": "^4.3.2",
