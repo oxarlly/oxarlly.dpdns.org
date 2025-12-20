@@ -37,9 +37,9 @@
 如果你偏好本地环境，请确保已安装 **Node.js (v18+)**、**Git** 和 **Hexo-cli**。
 
 1. **克隆仓库**:
-   `git clone https://github.com/oxarlly/oxarlly.dpdns.org.git`
+   `git clone https://github.com/oxarlly/hexo-theme-butterfly-usk.git`
 2. **安装依赖**:
-   `cd oxarlly.dpdns.org && npm install`
+   `cd hexo-theme-butterfly-usk && npm install`
 3. **启动预览**:
    `hexo s`
 
@@ -77,19 +77,16 @@
 
 ### 📣 交流与反馈
 - 如果觉得好用，欢迎点一个 **Star** ⭐ 支持作者！
-- 主站 (GitHub): https://guguge.top
-- 镜像 (Gitee): https://guguge.gitee.io
+- 主站: [https://oxarlly.dpdns.org/](https://oxarlly.dpdns.org/)
+- 源站: [https://oxarlly.github.io/](https://oxarlly.github.io/)
 
 ---
 © 2025 HEXO BUTTERFLY STARTER KIT.
 ### 已开通频道：
 
-- 抖音号：guguge.top
-- 快手号：guguge_top
-- 今日头条 & 西瓜视频：GuGuGe
-- BiliBili：https://space.bilibili.com/2526845
-- AcFun: https://www.acfun.cn/u/33202018
-- YouTube: https://www.youtube.com/channel/UCmTnzS1GM2RQdgobQgZ0Tug
+- 抖音：ysxxw000
+- 微信：bingningshi007
+- 邮箱：creator@oxarlly.dpdns.org
 
 ---
 
