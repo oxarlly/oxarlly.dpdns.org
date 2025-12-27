@@ -174,3 +174,7 @@ encrypt: # hexo-blog-encrypt
   wrong_pass_message: 密码错误
   wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.
 
+# 增量生成配置
+generator:
+  incremental: true  # 开启增量生成
+  silent: true       # 静默模式，减少日志输出耗时
