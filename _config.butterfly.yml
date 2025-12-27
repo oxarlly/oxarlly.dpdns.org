@@ -981,6 +981,7 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
+    - <script defer src="https://cloud.umami.is/script.js" data-website-id="7525f5b2-b5dd-423e-8dff-d482a70f688e"></script>
   bottom:
     # - <script src="xxxx"></script>
 
